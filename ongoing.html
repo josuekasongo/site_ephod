@@ -336,52 +336,7 @@
   <!-- ========== FOOTER ========== -->
 
   
-  <!-- ========== INTERVENTION MAP ========== -->
-  <section class="py-5" style="background:#fcfcfc;">
-    <div class="container mb-4 text-center fade-up">
-      <span class="section-label-rmda d-inline-block mb-3" data-i18n="ongoing.map_label">GÉOGRAPHIE</span>
-      <h2 class="srv-grid-heading" data-i18n="ongoing.map_title">Notre d&#xE9;ploiement <span class="color-rouge">en RDC</span></h2>
-    </div>
-    <div class="container fade-up">
-      <div id="ephodMap" style="height: 500px; width: 100%; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); border: 2px solid white;"></div>
-    </div>
-  </section>
 
-  <!-- Leaflet CSS & JS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => {
-        if(document.getElementById('ephodMap')){
-          // Initialize map centered on DRC
-          var map = L.map('ephodMap').setView([-2.5, 23.5], 5);
-          L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
-          }).addTo(map);
-
-          // Add markers
-          var locations = [
-            { name: "Kinshasa (Siège)", coords: [-4.4419, 15.2663] },
-            { name: "Goma (Antenne)", coords: [-1.6585, 29.2205] },
-            { name: "Beni (Antenne)", coords: [0.4911, 29.4731] },
-            { name: "Lualaba (Projet en cours)", coords: [-10.7167, 25.4667] },
-            { name: "Sud-Kivu (Projet en cours)", coords: [-2.5000, 28.8333] }
-          ];
-          
-          var customIcon = L.icon({
-            iconUrl: 'https://cdn-icons-png.flaticon.com/512/845/845022.png',
-            iconSize: [30, 30]
-          });
-
-          locations.forEach(loc => {
-            L.marker(loc.coords, {icon: customIcon}).addTo(map)
-             .bindPopup('<b>' + loc.name + '</b><br>Intervention EPHOD');
-          });
-        }
-      }, 1000);
-    });
-  </script>
 
   <!-- ========== FULL INSTITUTIONAL FOOTER ========== -->
   <footer class="main-footer">
