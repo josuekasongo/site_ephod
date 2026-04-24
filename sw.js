@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ephod-cache-v3.9';
+const CACHE_NAME = 'ephod-cache-v4.0';
 const urlsToCache = [
   './',
   './index.html',
