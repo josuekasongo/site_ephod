@@ -187,11 +187,11 @@ const translations = {
         "ongoing.banner_title": "<span class='color-noir'>MISSIONS EN COURS</span> <span class='color-rouge'>DE RÉALISATION</span>",
 
         "srv.s1_title": "ÉTUDES & RECHERCHES",
-        "srv.s1_desc": "Baseline, Market Study, évaluations de besoins (ERM) et diagnostics institutionnels complets.",
+        "srv.s1_desc": "Baseline, Études de Marché, Évaluations de besoins et Diagnostics Institutionnels.",
         "srv.s2_title": "EVALUATIONS INDÉPENDANTES",
-        "srv.s2_desc": "Évaluations à mi-parcours et finales selon les critères OCDE-CAD et CHS Alliance.",
+        "srv.s2_desc": "Évaluations à mi-parcours et finales selon les critères internationaux OCDE-CAD.",
         "srv.s3_title": "SERVICES MONÉTAIRES SÉCURISÉS",
-        "srv.s3_desc": "Appui aux interventions Cash (Mobile Money, Cash Express, Rémittences) en zones à accès complexe.",
+        "srv.s3_desc": "Appui aux interventions Cash (Mobile Money, Transferts) en zones à accès difficile.",
         "srv.s4_title": "FORMATIONS & CAPACITATION",
         "srv.s4_desc": "Renforcement des capacités en MEAL, gestion de projet et outils de collecte (KoboToolbox/ODK).",
         "srv.s5_title": "LOGISTIQUE DE TERRAIN",
@@ -695,7 +695,7 @@ const translations = {
         "portfolio.banner_title": "<span class='color-noir'>OUR IMPACT</span> <span class='color-rouge'>CAPITAL</span>",
 
         "srv.s1_title": "STUDIES & RESEARCH",
-        "srv.s1_desc": "Baseline, market studies, needs assessments (MSNA) and complete institutional diagnostics.",
+        "srv.s1_desc": "Baseline, Market Studies, Needs Assessments and Institutional Diagnostics.",
         "srv.s2_title": "INDEPENDENT EVALUATION",
         "srv.s2_desc": "Mid-term and final evaluations according to OECD-DAC and CHS Alliance criteria.",
         "srv.s3_title": "SECURE CASH SERVICES",
