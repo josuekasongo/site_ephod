@@ -6578,3 +6578,56 @@ body, html {
         gap: 15px;
     }
 }
+
+/* ============================================================
+   NEW FEATURES (v3.0) - WhatsApp
+   ============================================================ */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe57;
+    transform: translateY(-5px);
+    color: #FFF;
+    box-shadow: 2px 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* ============================================================
+   NEW FEATURES (v3.0) - Logo Animation
+   ============================================================ */
+@keyframes logoEntrance {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.logo-top-elite {
+    animation: logoEntrance 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes letterPop {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.logo-icon-box span {
+    animation: letterPop 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    display: inline-block;
+}
