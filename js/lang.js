@@ -535,6 +535,15 @@ const translations = {
         "srv_m6.i3_title": "Redevabilité (AAP) :",
         "srv_m6.i3_desc": "Mise en place de mécanismes de plainte et de feedback des bénéficiaires.",
 
+        "home.testi_label": "ILS NOUS FONT CONFIANCE",
+        "home.testi_heading": "Paroles de <span>Partenaires.</span>",
+        "home.testi1_text": "L'approche méthodologique d'EPHOD Consulting et leur maîtrise du contexte local ont été déterminantes pour la réussite de nos évaluations multisectorielles.",
+        "home.testi1_author": "Directeur Pays",
+        "home.testi1_org": "ONG Internationale (Goma)",
+        "home.testi2_text": "Une expertise data-driven impressionnante. Leurs analyses nous ont permis de recentrer nos stratégies d'intervention avec une grande précision.",
+        "home.testi2_author": "Chef de Projet",
+        "home.testi2_org": "Agence de Développement",
+
         "about.team_label": "NOTRE ÉQUIPE",
         "about.team_title": "Direction & <span style='background: linear-gradient(90deg, #8C1338, #FF2E2E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; margin-left: 8px;'>Experts Dédiés</span>",
         "about.team_desc": "Une synergie de compétences pour une réponse opérationnelle d'excellence.",
@@ -1131,6 +1140,15 @@ const translations = {
         "footer.goma_label": "GOMA",
         "footer.beni_label": "BENI",
         "footer.direct_label": "DIRECT CONTACT",
+
+        "home.testi_label": "TRUSTED BY",
+        "home.testi_heading": "Partners <span>Feedback.</span>",
+        "home.testi1_text": "EPHOD Consulting's methodological approach and their mastery of the local context were decisive for the success of our multi-sectoral evaluations.",
+        "home.testi1_author": "Country Director",
+        "home.testi1_org": "International NGO (Goma)",
+        "home.testi2_text": "Impressive data-driven expertise. Their analyses allowed us to refocus our intervention strategies with great precision.",
+        "home.testi2_author": "Project Manager",
+        "home.testi2_org": "Development Agency",
 
         "about.team_label": "OUR TEAM",
         "about.team_title": "Management & <span style='background: linear-gradient(90deg, #8C1338, #FF2E2E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; margin-left: 8px;'>Dedicated Experts</span>",
