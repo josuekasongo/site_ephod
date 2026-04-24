@@ -408,30 +408,54 @@
     </div>
     <div class="container fade-up">
       <div id="indexTestimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner text-center">
-          <div class="carousel-item active" data-bs-interval="6000">
-            <div class="mx-auto bg-white p-5 rounded-4 shadow-sm" style="max-width: 800px;">
-              <i class="bi bi-quote" style="font-size: 3rem; color: var(--primary); opacity: 0.15; line-height: 0;"></i>
-              <p class="fs-5 mt-3 mb-4 text-muted" data-i18n="home.testi1_text">"L'approche méthodologique d'EPHOD Consulting et leur maîtrise du contexte local ont été déterminantes pour la réussite de nos évaluations multisectorielles."</p>
-              <h5 class="fw-bold mb-1" data-i18n="home.testi1_author">Directeur Pays</h5>
-              <span class="text-primary fw-medium" data-i18n="home.testi1_org">ONG Internationale (Goma)</span>
+        <div class="carousel-inner pb-5">
+          <!-- Testimonial 1 -->
+          <div class="carousel-item active" data-bs-interval="7000">
+            <div class="mx-auto" style="max-width: 850px;">
+              <div class="card border-0 shadow" style="border-radius: 20px; padding: 40px; background: linear-gradient(145deg, #ffffff, #fdfdfd);">
+                <div class="card-body text-center position-relative">
+                  <i class="bi bi-quote position-absolute" style="font-size: 8rem; color: var(--primary); opacity: 0.06; top: -50px; left: 50%; transform: translateX(-50%); z-index: 0;"></i>
+                  <div class="position-relative" style="z-index: 1;">
+                    <div class="mb-4" style="color: #ffb400; font-size: 1.2rem;">
+                      <i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i>
+                    </div>
+                    <p class="fs-4 mb-5" style="color: #333; line-height: 1.8; font-weight: 500;" data-i18n="home.testi1_text">"L'approche méthodologique d'EPHOD Consulting et leur maîtrise du contexte local ont été déterminantes pour la réussite de nos évaluations multisectorielles."</p>
+                    <hr class="mx-auto mb-4" style="width: 60px; background-color: var(--primary); height: 4px; opacity: 1; border-radius: 2px;">
+                    <h5 class="fw-bold mb-1 text-dark" style="font-size: 1.25rem;" data-i18n="home.testi1_author">Directeur Pays</h5>
+                    <span class="fw-bold" style="color: var(--primary); font-size: 0.9rem; letter-spacing: 1.5px; text-transform: uppercase;" data-i18n="home.testi1_org">ONG Internationale (Goma)</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="6000">
-            <div class="mx-auto bg-white p-5 rounded-4 shadow-sm" style="max-width: 800px;">
-              <i class="bi bi-quote" style="font-size: 3rem; color: var(--primary); opacity: 0.15; line-height: 0;"></i>
-              <p class="fs-5 mt-3 mb-4 text-muted" data-i18n="home.testi2_text">"Une expertise data-driven impressionnante. Leurs analyses nous ont permis de recentrer nos stratégies d'intervention avec une grande précision."</p>
-              <h5 class="fw-bold mb-1" data-i18n="home.testi2_author">Chef de Projet</h5>
-              <span class="text-primary fw-medium" data-i18n="home.testi2_org">Agence de Développement</span>
+          <!-- Testimonial 2 -->
+          <div class="carousel-item" data-bs-interval="7000">
+            <div class="mx-auto" style="max-width: 850px;">
+              <div class="card border-0 shadow" style="border-radius: 20px; padding: 40px; background: linear-gradient(145deg, #ffffff, #fdfdfd);">
+                <div class="card-body text-center position-relative">
+                  <i class="bi bi-quote position-absolute" style="font-size: 8rem; color: var(--primary); opacity: 0.06; top: -50px; left: 50%; transform: translateX(-50%); z-index: 0;"></i>
+                  <div class="position-relative" style="z-index: 1;">
+                    <div class="mb-4" style="color: #ffb400; font-size: 1.2rem;">
+                      <i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i>
+                    </div>
+                    <p class="fs-4 mb-5" style="color: #333; line-height: 1.8; font-weight: 500;" data-i18n="home.testi2_text">"Une expertise data-driven impressionnante. Leurs analyses nous ont permis de recentrer nos stratégies d'intervention avec une grande précision."</p>
+                    <hr class="mx-auto mb-4" style="width: 60px; background-color: var(--primary); height: 4px; opacity: 1; border-radius: 2px;">
+                    <h5 class="fw-bold mb-1 text-dark" style="font-size: 1.25rem;" data-i18n="home.testi2_author">Chef de Projet</h5>
+                    <span class="fw-bold" style="color: var(--primary); font-size: 0.9rem; letter-spacing: 1.5px; text-transform: uppercase;" data-i18n="home.testi2_org">Agence de Développement</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#indexTestimonialCarousel" data-bs-slide="prev" style="filter: invert(100%);">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        
+        <!-- Controls placed outside the cards -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#indexTestimonialCarousel" data-bs-slide="prev" style="width: 5%; filter: invert(100%); opacity: 0.5;">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 3rem; height: 3rem;"></span>
           <span class="visually-hidden">Précédent</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#indexTestimonialCarousel" data-bs-slide="next" style="filter: invert(100%);">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#indexTestimonialCarousel" data-bs-slide="next" style="width: 5%; filter: invert(100%); opacity: 0.5;">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="width: 3rem; height: 3rem;"></span>
           <span class="visually-hidden">Suivant</span>
         </button>
       </div>
