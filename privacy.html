@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -12,6 +12,56 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=2.2">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  
+  <style>
+    :root {
+      --legal-sidebar-bg: #f8f9fa;
+      --legal-border: #e9ecef;
+    }
+    .legal-nav-sticky {
+      position: sticky;
+      top: 100px;
+    }
+    .legal-nav-link {
+      display: block;
+      padding: 12px 20px;
+      color: #555;
+      border-radius: 8px;
+      margin-bottom: 5px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border-left: 3px solid transparent;
+    }
+    .legal-nav-link:hover, .legal-nav-link.active {
+      background: rgba(140, 19, 56, 0.05);
+      color: var(--primary);
+      border-left-color: var(--primary);
+    }
+    .legal-card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+      border: 1px solid var(--legal-border);
+      margin-bottom: 30px;
+    }
+    .legal-section-anchor {
+      scroll-margin-top: 110px;
+    }
+    .legal-icon-wrap {
+      width: 45px;
+      height: 45px;
+      background: var(--primary);
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  </style>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
@@ -22,7 +72,7 @@
   </script>
 </head>
 
-<body>
+<body class="bg-light">
 
   <!-- ========== NAVBAR ========== -->
   <nav class="navbar navbar-expand-lg sticky-top navbar-rmda shadow-sm">
@@ -62,56 +112,92 @@
     </div>
   </nav>
 
-  <!-- ========== HEADER ========== -->
-  <header class="py-5 bg-dark text-white text-center shadow-lg" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/portfolio/strategic_workshop.webp') center/cover;">
-    <div class="container py-5 fade-up">
-      <h1 class="display-3 fw-bold" data-i18n="privacy.title">Mentions Légales</h1>
-      <p class="lead opacity-75" data-i18n="privacy.subtitle">Transparence, Protection des données & Éthique</p>
+  <!-- ========== HEADER (MINIMAL) ========== -->
+  <header class="py-5 bg-white border-bottom">
+    <div class="container text-center py-4 fade-up">
+      <span class="badge bg-danger-subtle text-danger mb-3 px-3 py-2 rounded-pill uppercase fw-bold" style="letter-spacing:1px;" data-i18n="privacy.last_update">Dernière mise à jour : 25 Avril 2026</span>
+      <h1 class="display-4 fw-bold color-noir mb-3" data-i18n="privacy.title">Mentions Légales</h1>
+      <p class="lead text-muted mx-auto" style="max-width:600px;" data-i18n="privacy.subtitle">Transparence, Protection des données & Éthique</p>
     </div>
   </header>
 
   <!-- ========== CONTENT ========== -->
   <section class="py-5">
     <div class="container py-lg-5">
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="bg-white p-5 rounded-4 shadow-sm fade-up border">
-            
-            <div class="mb-5">
-              <h2 class="h4 fw-bold color-rouge mb-3" data-i18n="privacy.sec1_title">1. Identité de l'Entreprise</h2>
-              <p class="text-muted" data-i18n="privacy.sec1_desc">
-                EPHOD CONSULTING est un cabinet d'expertise humanitaire et de développement enregistré en République Démocratique du Congo.<br>
-                <strong>RCCM :</strong> CD/KNG/RCCM/25-B-03958 | <strong>ID NAT :</strong> 01-H5300-N88322C<br>
-                <strong>Siège social :</strong> Q. Ma Campagne, Av. Kapaya N°03, Ngaliema, Kinshasa.
-              </p>
-            </div>
+      <div class="row g-5">
+        
+        <!-- SIDEBAR NAV -->
+        <aside class="col-lg-3 d-none d-lg-block">
+          <div class="legal-nav-sticky">
+            <h5 class="fw-bold mb-4 px-3" style="font-size:0.9rem; color:#999; letter-spacing:1px; text-transform:uppercase;">Navigation</h5>
+            <nav id="legal-toc">
+              <a href="#id" class="legal-nav-link" data-i18n="privacy.menu_identity">Identité</a>
+              <a href="#data" class="legal-nav-link" data-i18n="privacy.menu_data">Données</a>
+              <a href="#intellect" class="legal-nav-link" data-i18n="privacy.menu_intellect">Propriété</a>
+              <a href="#cookies" class="legal-nav-link" data-i18n="privacy.menu_cookies">Cookies</a>
+              <a href="#psea" class="legal-nav-link" data-i18n="privacy.menu_psea">Engagement Éthique</a>
+            </nav>
+          </div>
+        </aside>
 
-            <div class="mb-5">
-              <h2 class="h4 fw-bold color-rouge mb-3" data-i18n="privacy.sec2_title">2. Protection des Données Personnelles</h2>
-              <p class="text-muted" data-i18n="privacy.sec2_desc">
-                Conformément aux standards internationaux de protection des données (RGPD et lois locales), EPHOD CONSULTING s'engage à traiter vos données avec la plus stricte confidentialité. Les informations collectées via nos formulaires (Contact, Candidatures) ne sont utilisées que dans le cadre spécifique de votre demande.
-              </p>
-              <ul class="text-muted">
-                <li data-i18n="privacy.sec2_li1">Aucune donnée n'est vendue ou cédée à des tiers.</li>
-                <li data-i18n="privacy.sec2_li2">Vos CV et documents personnels sont conservés dans un environnement sécurisé.</li>
-                <li data-i18n="privacy.sec2_li3">Vous disposez d'un droit d'accès, de rectification et de suppression de vos données en nous contactant à <strong>direction@ephodconsulting.org</strong>.</li>
+        <!-- MAIN CONTENT -->
+        <div class="col-lg-9">
+          
+          <!-- Sec 1: Identity -->
+          <div id="id" class="legal-card fade-up legal-section-anchor">
+            <div class="legal-icon-wrap"><i class="bi bi-building"></i></div>
+            <h2 class="h3 fw-bold color-noir mb-4" data-i18n="privacy.sec1_title">1. Identité de l'Entreprise</h2>
+            <div class="text-muted" style="line-height:1.8;">
+              <p data-i18n="privacy.sec1_desc">EPHOD CONSULTING est un cabinet d'expertise humanitaire et de développement enregistré en République Démocratique du Congo.</p>
+              <ul class="list-unstyled">
+                <li class="mb-2" data-i18n="privacy.sec1_rccm"><strong>RCCM :</strong> CD/KNG/RCCM/25-B-03958</li>
+                <li class="mb-2" data-i18n="privacy.sec1_idnat"><strong>ID NAT :</strong> 01-H5300-N88322C</li>
+                <li class="mb-2" data-i18n="privacy.sec1_address"><strong>Siège social :</strong> Q. Ma Campagne, Av. Kapaya N°03, Ngaliema, Kinshasa.</li>
               </ul>
             </div>
-
-            <div class="mb-5">
-              <h2 class="h4 fw-bold color-rouge mb-3" data-i18n="privacy.sec3_title">3. Propriété Intellectuelle</h2>
-              <p class="text-muted" data-i18n="privacy.sec3_desc">
-                L'ensemble du contenu de ce site (textes, images, logos, structure) est la propriété exclusive d'EPHOD CONSULTING, sauf mention contraire. Toute reproduction ou utilisation sans autorisation préalable est strictement interdite.
-              </p>
-            </div>
-
-            <div class="mb-0 pt-4 border-top">
-              <p class="small text-muted" data-i18n="privacy.footer">
-                Dernière mise à jour : Avril 2026. Pour toute question relative à nos mentions légales, n'hésitez pas à nous contacter.
-              </p>
-            </div>
-
           </div>
+
+          <!-- Sec 2: Data -->
+          <div id="data" class="legal-card fade-up legal-section-anchor">
+            <div class="legal-icon-wrap"><i class="bi bi-shield-lock"></i></div>
+            <h2 class="h3 fw-bold color-noir mb-4" data-i18n="privacy.sec2_title">2. Protection des Données Personnelles</h2>
+            <div class="text-muted" style="line-height:1.8;">
+              <p data-i18n="privacy.sec2_desc">Conformément aux standards internationaux de protection des données (RGPD et lois locales), EPHOD CONSULTING s'engage à traiter vos données avec la plus stricte confidentialité. Les informations collectées via nos formulaires (Contact, Candidatures) ne sont utilisées que dans le cadre spécifique de votre demande.</p>
+              <ul class="ms-3 mb-0">
+                <li class="mb-2" data-i18n="privacy.sec2_li1">Aucune donnée n'est vendue ou cédée à des tiers.</li>
+                <li class="mb-2" data-i18n="privacy.sec2_li2">Vos CV et documents personnels sont conservés dans un environnement sécurisé.</li>
+                <li class="mb-0" data-i18n="privacy.sec2_li3">Vous disposez d'un droit d'accès, de rectification et de suppression de vos données en nous contactant à <strong>direction@ephodconsulting.org</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Sec 3: Intellectual -->
+          <div id="intellect" class="legal-card fade-up legal-section-anchor">
+            <div class="legal-icon-wrap"><i class="bi bi-vector-pen"></i></div>
+            <h2 class="h3 fw-bold color-noir mb-4" data-i18n="privacy.sec3_title">3. Propriété Intellectuelle</h2>
+            <div class="text-muted" style="line-height:1.8;">
+              <p class="mb-0" data-i18n="privacy.sec3_desc">L'ensemble du contenu de ce site (textes, images, logos, structure) est la propriété exclusive d'EPHOD CONSULTING, sauf mention contraire. Toute reproduction ou utilisation sans autorisation préalable est strictement interdite.</p>
+            </div>
+          </div>
+
+          <!-- Sec 4: Cookies -->
+          <div id="cookies" class="legal-card fade-up legal-section-anchor">
+            <div class="legal-icon-wrap"><i class="bi bi-browser-safari"></i></div>
+            <h2 class="h3 fw-bold color-noir mb-4" data-i18n="privacy.sec4_title">4. Utilisation des Cookies</h2>
+            <div class="text-muted" style="line-height:1.8;">
+              <p class="mb-0" data-i18n="privacy.sec4_desc">Ce site utilise des cookies techniques et des services d'analyse (Google Analytics) pour améliorer votre expérience utilisateur et mesurer l'audience. Vous pouvez configurer votre navigateur pour refuser ces cookies.</p>
+            </div>
+          </div>
+
+          <!-- Sec 5: PSEA -->
+          <div id="psea" class="legal-card fade-up legal-section-anchor">
+            <div class="legal-icon-wrap"><i class="bi bi-heart-pulse"></i></div>
+            <h2 class="h3 fw-bold color-noir mb-4" data-i18n="privacy.sec5_title">5. Engagement Éthique (PSEA & Accountability)</h2>
+            <div class="text-muted" style="line-height:1.8;">
+              <p class="mb-0" data-i18n="privacy.sec5_desc">EPHOD CONSULTING adhère rigoureusement aux standards du Core Humanitarian Standard (CHS). Nous appliquons une politique de tolérance zéro envers l'exploitation et les abus sexuels (PSEA).</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -131,11 +217,11 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/lang.js?v=2.2"></script>
-  <script src="js/main.js?v=2.2"></script>
+  <script src="js/lang.js?v=4.9"></script>
+  <script src="js/main.js?v=4.9"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js?v=3.5');
+      navigator.serviceWorker.register('./sw.js?v=4.9');
     }
   </script>
 </body>

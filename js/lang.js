@@ -560,16 +560,34 @@ const translations = {
 
         "privacy.title": "Mentions Légales",
         "privacy.subtitle": "Transparence, Protection des données & Éthique",
+        "privacy.last_update": "Dernière mise à jour : 25 Avril 2026",
+        
+        "privacy.menu_identity": "Identité",
+        "privacy.menu_data": "Données",
+        "privacy.menu_intellect": "Propriété",
+        "privacy.menu_cookies": "Cookies",
+        "privacy.menu_psea": "Engagement Éthique",
+
         "privacy.sec1_title": "1. Identité de l'Entreprise",
-        "privacy.sec1_desc": "EPHOD CONSULTING est un cabinet d'expertise humanitaire et de développement enregistré en République Démocratique du Congo.<br><strong>RCCM :</strong> CD/KNG/RCCM/25-B-03958 | <strong>ID NAT :</strong> 01-H5300-N88322C<br><strong>Siège social :</strong> Q. Ma Campagne, Av. Kapaya N°03, Ngaliema, Kinshasa.",
+        "privacy.sec1_desc": "EPHOD CONSULTING est un cabinet d'expertise humanitaire et de développement enregistré en République Démocratique du Congo.",
+        "privacy.sec1_rccm": "<strong>RCCM :</strong> CD/KNG/RCCM/25-B-03958",
+        "privacy.sec1_idnat": "<strong>ID NAT :</strong> 01-H5300-N88322C",
+        "privacy.sec1_address": "<strong>Siège social :</strong> Q. Ma Campagne, Av. Kapaya N°03, Ngaliema, Kinshasa.",
+
         "privacy.sec2_title": "2. Protection des Données Personnelles",
         "privacy.sec2_desc": "Conformément aux standards internationaux de protection des données (RGPD et lois locales), EPHOD CONSULTING s'engage à traiter vos données avec la plus stricte confidentialité. Les informations collectées via nos formulaires (Contact, Candidatures) ne sont utilisées que dans le cadre spécifique de votre demande.",
         "privacy.sec2_li1": "Aucune donnée n'est vendue ou cédée à des tiers.",
         "privacy.sec2_li2": "Vos CV et documents personnels sont conservés dans un environnement sécurisé.",
-        "privacy.sec2_li3": "Vous disposez d'un droit d'accès, de rectification et de suppression de vos données en nous contactant à direction@ephodconsulting.org.",
+        "privacy.sec2_li3": "Vous disposez d'un droit d'accès, de rectification et de suppression de vos données en nous contactant à <strong>direction@ephodconsulting.org</strong>.",
+
         "privacy.sec3_title": "3. Propriété Intellectuelle",
         "privacy.sec3_desc": "L'ensemble du contenu de ce site (textes, images, logos, structure) est la propriété exclusive d'EPHOD CONSULTING, sauf mention contraire. Toute reproduction ou utilisation sans autorisation préalable est strictement interdite.",
-        "privacy.footer": "Dernière mise à jour : Avril 2026. Pour toute question relative à nos mentions légales, n'hésitez pas à nous contacter.",
+
+        "privacy.sec4_title": "4. Utilisation des Cookies",
+        "privacy.sec4_desc": "Ce site utilise des cookies techniques et des services d'analyse (Google Analytics) pour améliorer votre expérience utilisateur et mesurer l'audience. Vous pouvez configurer votre navigateur pour refuser ces cookies.",
+
+        "privacy.sec5_title": "5. Engagement Éthique (PSEA & Accountability)",
+        "privacy.sec5_desc": "EPHOD CONSULTING adhère rigoureusement aux standards du Core Humanitarian Standard (CHS). Nous appliquons une politique de tolérance zéro envers l'exploitation et les abus sexuels (PSEA).",
         "footer.privacy": "Privacy Policy",
         "footer.terms": "Terms"
     },
@@ -1170,16 +1188,34 @@ const translations = {
 
         "privacy.title": "Legal Mentions",
         "privacy.subtitle": "Transparency, Data Protection & Ethics",
+        "privacy.last_update": "Last update: April 25, 2026",
+
+        "privacy.menu_identity": "Identity",
+        "privacy.menu_data": "Data",
+        "privacy.menu_intellect": "Property",
+        "privacy.menu_cookies": "Cookies",
+        "privacy.menu_psea": "Ethical Commitment",
+
         "privacy.sec1_title": "1. Corporate Identity",
-        "privacy.sec1_desc": "EPHOD CONSULTING is a humanitarian and development consulting firm registered in the Democratic Republic of Congo.<br><strong>RCCM:</strong> CD/KNG/RCCM/25-B-03958 | <strong>ID NAT:</strong> 01-H5300-N88322C<br><strong>HQ:</strong> Q. Ma Campagne, Av. Kapaya N°03, Ngaliema, Kinshasa.",
-        "privacy.sec2_title": "2. Data Protection",
+        "privacy.sec1_desc": "EPHOD CONSULTING is a humanitarian and development expertise firm registered in the Democratic Republic of Congo.",
+        "privacy.sec1_rccm": "<strong>RCCM:</strong> CD/KNG/RCCM/25-B-03958",
+        "privacy.sec1_idnat": "<strong>ID NAT:</strong> 01-H5300-N88322C",
+        "privacy.sec1_address": "<strong>Head office:</strong> Q. Ma Campagne, Av. Kapaya N°03, Ngaliema, Kinshasa.",
+
+        "privacy.sec2_title": "2. Personal Data Protection",
         "privacy.sec2_desc": "In accordance with international data protection standards (GDPR and local laws), EPHOD CONSULTING is committed to processing your data with the strictest confidentiality. Information collected via our forms (Contact, Applications) is only used for your specific request.",
         "privacy.sec2_li1": "No data is sold or transferred to third parties.",
         "privacy.sec2_li2": "Your CVs and personal documents are kept in a secure environment.",
-        "privacy.sec2_li3": "You have the right to access, rectify and delete your data by contacting us at direction@ephodconsulting.org.",
+        "privacy.sec2_li3": "You have the right to access, rectify and delete your data by contacting us at <strong>direction@ephodconsulting.org</strong>.",
+
         "privacy.sec3_title": "3. Intellectual Property",
         "privacy.sec3_desc": "All content on this site (text, images, logos, structure) is the exclusive property of EPHOD CONSULTING, unless otherwise stated. Any reproduction or use without prior authorization is strictly prohibited.",
-        "privacy.footer": "Last update: April 2026. For any question regarding our legal mentions, do not hesitate to contact us.",
+
+        "privacy.sec4_title": "4. Use of Cookies",
+        "privacy.sec4_desc": "This site uses technical cookies and analytical services (Google Analytics) to improve your user experience and measure audience. You can configure your browser to refuse these cookies.",
+
+        "privacy.sec5_title": "5. Ethical Commitment (PSEA & Accountability)",
+        "privacy.sec5_desc": "EPHOD CONSULTING strictly adheres to the standards of the Core Humanitarian Standard (CHS). We apply a zero-tolerance policy towards sexual exploitation and abuse (PSEA).",
         "footer.privacy": "Privacy Policy",
         "footer.terms": "Terms"
     }
