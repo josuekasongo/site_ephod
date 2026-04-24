@@ -536,7 +536,7 @@ const translations = {
         "srv_m6.i3_desc": "Mise en place de mécanismes de plainte et de feedback des bénéficiaires.",
 
         "home.testi_label": "ILS NOUS FONT CONFIANCE",
-        "home.testi_heading": "Paroles de <span>Partenaires.</span>",
+        "home.testi_heading": "Paroles de <span style='background: linear-gradient(90deg, #8C1338, #FF2E2E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; margin-left: 8px;'>Partenaires.</span>",
         "home.testi1_text": "L'approche méthodologique d'EPHOD Consulting et leur maîtrise du contexte local ont été déterminantes pour la réussite de nos évaluations multisectorielles.",
         "home.testi1_author": "Directeur Pays",
         "home.testi1_org": "ONG Internationale (Goma)",
@@ -1142,7 +1142,7 @@ const translations = {
         "footer.direct_label": "DIRECT CONTACT",
 
         "home.testi_label": "TRUSTED BY",
-        "home.testi_heading": "Partners <span>Feedback.</span>",
+        "home.testi_heading": "Our Partners <span style='background: linear-gradient(90deg, #8C1338, #FF2E2E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; margin-left: 8px;'>Feedback.</span>",
         "home.testi1_text": "EPHOD Consulting's methodological approach and their mastery of the local context were decisive for the success of our multi-sectoral evaluations.",
         "home.testi1_author": "Country Director",
         "home.testi1_org": "International NGO (Goma)",
