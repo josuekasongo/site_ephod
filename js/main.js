@@ -508,10 +508,32 @@ function initActiveNav() {
     navbar.classList.toggle('scrolled', window.scrollY > 50);
   }
 
-  // Auto-close mobile menu on link click
+  // Mobile Dropdown Toggle Behavior
+  if (window.innerWidth < 992) {
+    const dropdownParents = document.querySelectorAll('.nav-item.has-dropdown > .nav-link');
+    dropdownParents.forEach(parent => {
+      parent.addEventListener('click', (e) => {
+        const dropdown = parent.nextElementSibling;
+        if (dropdown && dropdown.classList.contains('nav-dropdown')) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          // Close other open dropdowns
+          document.querySelectorAll('.nav-dropdown.show-mobile').forEach(d => {
+            if (d !== dropdown) d.classList.remove('show-mobile');
+          });
+          
+          dropdown.classList.toggle('show-mobile');
+        }
+      });
+    });
+  }
+
+  // Auto-close mobile menu on link click (only for non-dropdown links or sub-items)
   const navCollapse = document.getElementById('navMenu');
   if (navCollapse) {
-    links.forEach(link => {
+    const closeLinks = document.querySelectorAll('.nav-dropdown-item, .nav-link:not(.has-dropdown > .nav-link)');
+    closeLinks.forEach(link => {
       link.addEventListener('click', () => {
         if (navCollapse.classList.contains('show')) {
           const bsCollapse = bootstrap.Collapse.getInstance(navCollapse) || new bootstrap.Collapse(navCollapse);
