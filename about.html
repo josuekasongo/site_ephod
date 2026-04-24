@@ -16,6 +16,14 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://josuekasongo.github.io/site_ephod/img/portfolio/strategic_workshop.webp">
   <meta property="og:url" content="https://josuekasongo.github.io/site_ephod/">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
 
@@ -198,77 +206,89 @@
     </div>
   </section>
 
-  <!-- ========== EQUIPE ========== -->
+  <!-- ========== NOTRE ÉQUIPE (PREMIUM SECTION) ========== -->
   <section class="py-5 bg-light" id="equipe">
-    <div class="container py-lg-5 text-center">
-      <span class="section-label-rmda" data-i18n="about.team_label">LEADERSHIP</span>
-      <h2 class="srv-grid-heading mb-5" data-i18n="about.team_title">Direction <span>Stratégique</span></h2>
+    <div class="container py-lg-5">
+      <div class="text-center mb-5 fade-up">
+        <span class="section-label-rmda" data-i18n="about.team_label">NOTRE ÉQUIPE</span>
+        <h2 class="srv-grid-heading" data-i18n="about.team_title">Direction & <span>Experts Dédiés</span></h2>
+        <p class="mt-3 text-muted mx-auto" style="max-width:700px;" data-i18n="about.team_desc">Une synergie de compétences pour une réponse opérationnelle d'excellence.</p>
+      </div>
+
       <div class="row g-4 justify-content-center">
         <!-- Zaina -->
         <div class="col-md-6 col-lg-3 fade-up">
-          <div class="valeur-card h-100">
-             <div class="valeur-icon-wrap"><i class="bi bi-person-fill"></i></div>
-             <h5 class="valeur-title">Zaina NDOOLE KISHUBA</h5>
-             <p class="text-primary small fw-bold mb-3" data-i18n="about.role_dg">Gérante Principale</p>
-             <p class="valeur-desc" data-i18n="about.role_dg_desc">Visionnaire et garante de l'excellence stratégique d'EPHOD Consulting.</p>
+          <div class="team-card-premium">
+            <div class="team-card-top">
+              <div class="team-avatar-placeholder">ZN</div>
+            </div>
+            <div class="team-card-body">
+              <h5 class="team-name">Zaina NDOOLE KISHUBA</h5>
+              <p class="team-role" data-i18n="about.role_dg">Gérante Principale</p>
+              <div class="team-divider"></div>
+              <p class="team-bio small text-muted" data-i18n="about.role_dg_desc">Visionnaire et garante de l'excellence stratégique d'EPHOD Consulting.</p>
+              <div class="team-social-links">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:direction@ephodconsulting.org"><i class="bi bi-envelope-fill"></i></a>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Charles -->
-        <div class="col-md-6 col-lg-3 fade-up" style="transition-delay: 0.2s;">
-          <div class="valeur-card h-100">
-             <div class="valeur-icon-wrap"><i class="bi bi-gear-fill"></i></div>
-             <h5 class="valeur-title">Charles KIKANDI ISHARA</h5>
-             <p class="text-primary small fw-bold mb-3" data-i18n="about.role_ops">Gérant Adjoint (Ops)</p>
-             <p class="valeur-desc" data-i18n="about.role_ops_desc">Expert en coordination et déploiements terrain en environnements complexes.</p>
+        <div class="col-md-6 col-lg-3 fade-up" style="transition-delay: 0.1s;">
+          <div class="team-card-premium">
+            <div class="team-card-top">
+              <div class="team-avatar-placeholder">CK</div>
+            </div>
+            <div class="team-card-body">
+              <h5 class="team-name">Charles KIKANDI ISHARA</h5>
+              <p class="team-role" data-i18n="about.role_ops">Gérant Adjoint (Ops)</p>
+              <div class="team-divider"></div>
+              <p class="team-bio small text-muted" data-i18n="about.role_ops_desc">Expert en coordination et déploiements terrain en environnements complexes.</p>
+              <div class="team-social-links">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-envelope-fill"></i></a>
+              </div>
+            </div>
           </div>
         </div>
+
         <!-- Richard -->
+        <div class="col-md-6 col-lg-3 fade-up" style="transition-delay: 0.2s;">
+          <div class="team-card-premium">
+            <div class="team-card-top">
+              <div class="team-avatar-placeholder">RK</div>
+            </div>
+            <div class="team-card-body">
+              <h5 class="team-name">Richard KAMBALE MAKELELE</h5>
+              <p class="team-role" data-i18n="about.role_prog">Gérant Adjoint (Prog)</p>
+              <div class="team-divider"></div>
+              <p class="team-bio small text-muted" data-i18n="about.bio_richard">Statisticien économiste (ENSEA Abidjan). Expert MEAL pour ENABEL, OIM et GIZ.</p>
+              <div class="team-social-links">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-envelope-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Josué Kasongo -->
         <div class="col-md-6 col-lg-3 fade-up" style="transition-delay: 0.3s;">
-          <div class="valeur-card h-100">
-             <div class="valeur-icon-wrap"><i class="bi bi-graph-up-arrow"></i></div>
-             <h5 class="valeur-title">Richard KAMBALE MAKELELE</h5>
-             <p class="text-primary small fw-bold mb-3" data-i18n="about.role_prog">Gérant Adjoint (Prog)</p>
-             <p class="valeur-desc" data-i18n="about.bio_richard">Statisticien économiste (ENSEA Abidjan). Expert MEAL pour ENABEL, OIM et GIZ.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- ========== CONSULTANTS SÉNIORS ========== -->
-  <section class="py-5 bg-white overflow-hidden" id="mission">
-    <div class="container py-lg-5 text-center">
-      <span class="section-label-rmda" data-i18n="about.consultants_label">CORPS DE CONSULTANTS</span>
-      <h2 class="srv-grid-heading mb-5" data-i18n="about.consultants_title">Nos Experts <span>Associés</span></h2>
-      <div class="row g-4 justify-content-center">
-        <!-- Expert MEAL -->
-        <div class="col-md-6 col-lg-4 fade-up">
-          <div class="valeur-card h-100">
-             <div class="valeur-icon-wrap"><i class="bi bi-bar-chart-fill"></i></div>
-             <h5 class="valeur-title">Robert MUSAVULI</h5>
-             <p class="text-primary small fw-bold mb-3" data-i18n="about.role_meal">Expert Senior MEAL</p>
-             <p class="valeur-desc" data-i18n="about.bio_meal">Expert en systèmes de suivi-évaluation et data-analytics pour les grands comptes.</p>
-          </div>
-        </div>
-
-        <!-- Expert WASH -->
-        <div class="col-md-6 col-lg-4 fade-up" style="transition-delay: 0.1s;">
-          <div class="valeur-card h-100">
-             <div class="valeur-icon-wrap"><i class="bi bi-droplet-fill"></i></div>
-             <h5 class="valeur-title">Jean-Marie BOSCO</h5>
-             <p class="text-primary small fw-bold mb-3" data-i18n="about.role_wash">Spécialiste WASH</p>
-             <p class="valeur-desc" data-i18n="about.bio_wash">Ingénieur expert en accès à l'eau et hygiène en milieux ruraux et zones de conflits.</p>
-          </div>
-        </div>
-
-        <!-- Expert Protection -->
-        <div class="col-md-6 col-lg-4 fade-up" style="transition-delay: 0.2s;">
-          <div class="valeur-card h-100">
-             <div class="valeur-icon-wrap"><i class="bi bi-shield-shaded"></i></div>
-             <h5 class="valeur-title">Bernadette KAVIRA</h5>
-             <p class="text-primary small fw-bold mb-3" data-i18n="about.role_protection">Consultante Protection</p>
-             <p class="valeur-desc" data-i18n="about.bio_protection">Spécialiste de la protection de l'enfance et de l'intégration de l'approche genre.</p>
+          <div class="team-card-premium">
+            <div class="team-card-top">
+              <div class="team-avatar-placeholder">JK</div>
+            </div>
+            <div class="team-card-body">
+              <h5 class="team-name">Josué KASONGO</h5>
+              <p class="team-role" data-i18n="about.tm1_role">Directeur IT & Expert MEAL</p>
+              <div class="team-divider"></div>
+              <p class="team-bio small text-muted">Spécialiste de la transformation numérique et de l'ingénierie des données MEAL.</p>
+              <div class="team-social-links">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-envelope-fill"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -426,7 +446,7 @@
       <div class="footer-bottom-elite">
         <p>&copy; 2026 EPHOD CONSULTING. Tous droits réservés.</p>
         <div class="f-bottom-links">
-          <a href="#">Privacy Policy</a>
+          <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
           <a href="#">Terms</a>
         </div>
       </div>

@@ -6631,3 +6631,108 @@ body, html {
     animation: letterPop 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     display: inline-block;
 }
+
+/* ============================================================
+   TEAM PREMIUM CARDS
+   ============================================================ */
+.team-card-premium {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid #f0f0f0;
+  height: 100%;
+}
+
+.team-card-premium:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  border-color: var(--primary);
+}
+
+.team-card-top {
+  height: 180px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.team-avatar-placeholder {
+  width: 90px;
+  height: 90px;
+  background: var(--dark);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 800;
+  border: 4px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.team-card-premium:hover .team-avatar-placeholder {
+  background: var(--primary);
+  transform: scale(1.1);
+}
+
+.team-card-body {
+  padding: 25px;
+  text-align: center;
+}
+
+.team-name {
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 5px;
+  font-size: 1.15rem;
+}
+
+.team-role {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.team-divider {
+  width: 30px;
+  height: 2px;
+  background: #eee;
+  margin: 15px auto;
+}
+
+.team-bio {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.team-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.team-social-links a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.team-social-links a:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-3px);
+}
