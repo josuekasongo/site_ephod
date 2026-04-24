@@ -536,8 +536,8 @@ const translations = {
         "srv_m6.i3_desc": "Mise en place de mécanismes de plainte et de feedback des bénéficiaires.",
 
         "about.team_label": "NOTRE ÉQUIPE",
-        "about.team_title": "Experts <span>Dédiés</span>",
-        "about.team_desc": "Une équipe pluridisciplinaire unie par la rigueur et l'engagement envers le développement durable.",
+        "about.team_title": "Direction & <span style='background: linear-gradient(90deg, #8C1338, #FF2E2E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; margin-left: 8px;'>Experts Dédiés</span>",
+        "about.team_desc": "Une synergie de compétences pour une réponse opérationnelle d'excellence.",
         "about.tm1_name": "Josué Kasongo",
         "about.tm1_role": "Directeur Gérant & Expert MEAL",
         "about.tm2_name": "Consultant Senior",
@@ -1133,8 +1133,8 @@ const translations = {
         "footer.direct_label": "DIRECT CONTACT",
 
         "about.team_label": "OUR TEAM",
-        "about.team_title": "Dedicated <span>Experts</span>",
-        "about.team_desc": "A multidisciplinary team united by rigor and commitment to sustainable development.",
+        "about.team_title": "Management & <span style='background: linear-gradient(90deg, #8C1338, #FF2E2E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; margin-left: 8px;'>Dedicated Experts</span>",
+        "about.team_desc": "A synergy of skills for operational response excellence.",
         "about.tm1_name": "Josué Kasongo",
         "about.tm1_role": "Managing Director & MEAL Expert",
         "about.tm2_name": "Senior Consultant",
