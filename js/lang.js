@@ -733,6 +733,7 @@ const translations = {
         "srv.modal_need": "Client Need",
         "srv.modal_how": "Our Methodology",
         "srv.modal_value": "Added Value",
+        "srv.modal_close": "Close",
 
         "srv.s1_need": "Requirement for evidence-based and reliable data to guide humanitarian and development interventions.",
         "srv.s1_how": "Deployment of field surveys (MSNA, Baseline) via digital tools (Kobo) and rigorous statistical analysis.",
