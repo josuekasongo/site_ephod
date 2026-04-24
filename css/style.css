@@ -6249,3 +6249,332 @@ body, html {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* ============================================================
+   CANDIDATURE SPONTANÉE — Elite Section
+   ============================================================ */
+.spontaneous-section {
+    background: linear-gradient(160deg, #f9f6f2 0%, #fff 60%, #faf3f5 100%);
+    border-top: 1px solid rgba(140, 19, 56, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+.spontaneous-section::before {
+    content: "EPHOD";
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translateY(-50%);
+    font-size: 16rem;
+    font-weight: 900;
+    color: rgba(140, 19, 56, 0.03);
+    pointer-events: none;
+    letter-spacing: -5px;
+    line-height: 1;
+}
+
+.spontaneous-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 680px;
+    margin: 1rem auto 0;
+    line-height: 1.8;
+}
+
+/* Trust Row */
+.spont-trust-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.spont-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(140, 19, 56, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+.spont-trust-item i {
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+/* Main Form Card */
+.spontaneous-form-card {
+    background: #fff;
+    border-radius: 28px;
+    border: 1px solid rgba(140, 19, 56, 0.08);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+.spont-form-inner {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+}
+
+/* Left Decoration Panel */
+.spont-form-deco {
+    background: linear-gradient(160deg, #120508 0%, #2a0a12 50%, #8C1338 100%);
+    color: #fff;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.spont-deco-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 10px;
+}
+.spont-form-deco h4 {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0;
+}
+.spont-form-deco p {
+    font-size: 0.9rem;
+    opacity: 0.75;
+    line-height: 1.7;
+    margin: 0;
+}
+.spont-what-we-look {
+    margin: 0;
+}
+.spont-what-we-look li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 12px;
+}
+.spont-what-we-look li i {
+    color: #e8a0b0;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+.spont-email-hint {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.6);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
+.spont-email-hint i {
+    color: rgba(255,255,255,0.5);
+}
+
+/* Right Form Panel */
+.spont-form-fields {
+    padding: 50px 50px;
+}
+.spontaneous-form {
+    width: 100%;
+}
+
+/* Form elements */
+.spont-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+.spont-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    background: #fdfdfd;
+    transition: all 0.3s ease;
+    appearance: none;
+}
+.spont-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(140, 19, 56, 0.06);
+}
+.spont-textarea {
+    resize: vertical;
+    min-height: 160px;
+    line-height: 1.7;
+}
+.spont-char-counter {
+    text-align: right;
+    font-size: 0.78rem;
+    color: #aaa;
+    margin-top: 6px;
+}
+
+/* File Upload Zone */
+.spont-upload-zone {
+    border: 2px dashed #ddd;
+    border-radius: 14px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    background: #fafafa;
+}
+.spont-upload-zone:hover,
+.spont-upload-zone.drag-over {
+    border-color: var(--primary);
+    background: rgba(140, 19, 56, 0.02);
+}
+.spont-upload-zone input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.spont-upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    pointer-events: none;
+}
+.spont-upload-content i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    opacity: 0.6;
+}
+.spont-upload-content span {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+.spont-upload-content strong {
+    color: var(--primary);
+    cursor: pointer;
+}
+.spont-upload-content small {
+    color: #bbb;
+    font-size: 0.8rem;
+}
+.spont-upload-preview {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+.spont-upload-preview i {
+    font-size: 1.6rem;
+}
+.spont-remove-file {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: #999;
+    cursor: pointer;
+    padding: 0 5px;
+    line-height: 1;
+    margin-left: auto;
+}
+.spont-remove-file:hover {
+    color: var(--primary);
+}
+
+/* Submit button */
+.spont-submit-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.spont-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 18px 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 10px 30px rgba(140, 19, 56, 0.3);
+}
+.spont-submit-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(140, 19, 56, 0.35);
+}
+.spont-submit-btn:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+.spont-btn-icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+.spont-disclaimer {
+    font-size: 0.78rem;
+    color: #aaa;
+    margin: 0;
+    max-width: 450px;
+    line-height: 1.6;
+}
+
+/* Success state */
+.spont-submit-btn.success {
+    background: #28a745 !important;
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3) !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .spont-form-inner {
+        grid-template-columns: 1fr;
+    }
+    .spont-form-deco {
+        padding: 40px 30px;
+        border-radius: 0;
+    }
+    .spont-form-fields {
+        padding: 40px 25px;
+    }
+    .spont-trust-row {
+        gap: 15px;
+    }
+}

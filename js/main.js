@@ -930,6 +930,84 @@ function initRecruitmentForm() {
     });
 }
 
+
+/* ── SPONTANEOUS FORM LOGIC ─────────────────────────────── */
+function initSpontaneousForm() {
+    const form = document.getElementById('spontaneousForm');
+    if (!form) return;
+
+    // Character counter
+    const textarea = document.getElementById('spontLetter');
+    const counter = document.getElementById('letterCount');
+    if (textarea && counter) {
+        textarea.addEventListener('input', () => {
+            const len = textarea.value.length;
+            counter.textContent = len;
+            counter.style.color = len > 1400 ? '#e74c3c' : '';
+        });
+    }
+
+    // File upload preview
+    const cvInput = document.getElementById('spontCV');
+    const cvPreview = document.getElementById('cvPreview');
+    const cvFileName = document.getElementById('cvFileName');
+    const removeCv = document.getElementById('removeCv');
+    const cvContent = document.querySelector('.spont-upload-content');
+    const dropZone = document.getElementById('cvDropZone');
+
+    if (cvInput) {
+        cvInput.addEventListener('change', () => {
+            if (cvInput.files.length > 0) {
+                const name = cvInput.files[0].name;
+                cvFileName.textContent = name;
+                cvPreview.style.display = 'flex';
+                cvContent.style.display = 'none';
+            }
+        });
+    }
+    if (removeCv) {
+        removeCv.addEventListener('click', (e) => {
+            e.stopPropagation();
+            cvInput.value = '';
+            cvPreview.style.display = 'none';
+            cvContent.style.display = 'flex';
+        });
+    }
+
+    // Drag over styling
+    if (dropZone) {
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('drag-over');
+        });
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('drag-over');
+        });
+        dropZone.addEventListener('drop', () => {
+            dropZone.classList.remove('drag-over');
+        });
+    }
+
+    // Submit feedback
+    form.addEventListener('submit', (e) => {
+        const btn = document.getElementById('spontSubmitBtn');
+        if (!btn) return;
+        
+        btn.disabled = true;
+        btn.className = btn.className + ' success';
+        const btnText = btn.querySelector('.spont-btn-text');
+        const btnIcon = btn.querySelector('.spont-btn-icon i');
+        
+        if (btnText) btnText.textContent = 'Candidature envoyée !';
+        if (btnIcon) { btnIcon.className = 'bi bi-check-lg'; }
+
+        // Scroll to success
+        setTimeout(() => {
+            btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Use a try-catch for the main init to ensure one failure doesn't kill the whole app
   try {
@@ -957,6 +1035,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPortfolioFilter();
     initEphodModals();
     initRecruitmentForm();
+    initSpontaneousForm();
     handleInitialAnchor();
     
     const yr = document.getElementById('year');

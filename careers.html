@@ -212,6 +212,164 @@
     </div>
   </section>
 
+  <!-- ========== CANDIDATURE SPONTANÉE (Section Permanente) ========== -->
+  <section class="spontaneous-section py-5" id="candidatureSpontanee">
+    <div class="container py-lg-4">
+
+      <!-- Header -->
+      <div class="spontaneous-header text-center mb-5 fade-up">
+        <span class="careers-section-eyebrow"><i class="bi bi-person-plus-fill"></i> <span data-i18n="careers.spont_label">CANDIDATURE SPONTANÉE</span></span>
+        <h2 class="careers-section-heading mt-3" data-i18n="careers.spont_title">Vous ne trouvez pas <span>votre poste ?</span></h2>
+        <p class="spontaneous-subtitle" data-i18n="careers.spont_subtitle">Votre profil nous intéresse même sans offre ouverte. Envoyez-nous votre dossier complet — nous l'analysons et vous recontactons dès qu'une opportunité correspond.</p>
+        <!-- Trust indicators -->
+        <div class="spont-trust-row">
+          <div class="spont-trust-item">
+            <i class="bi bi-clock-history"></i>
+            <span data-i18n="careers.spont_trust1">Réponse sous 72h ouvrables</span>
+          </div>
+          <div class="spont-trust-item">
+            <i class="bi bi-shield-check"></i>
+            <span data-i18n="careers.spont_trust2">Données sécurisées & confidentielles</span>
+          </div>
+          <div class="spont-trust-item">
+            <i class="bi bi-globe2"></i>
+            <span data-i18n="careers.spont_trust3">Profils FR / EN / Swahili bienvenus</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Card -->
+      <div class="spontaneous-form-card fade-up">
+        <div class="spont-form-inner">
+
+          <!-- Left decoration -->
+          <div class="spont-form-deco">
+            <div class="spont-deco-icon"><i class="bi bi-briefcase-fill"></i></div>
+            <h4 data-i18n="careers.spont_form_heading">Votre Dossier de Candidature</h4>
+            <p data-i18n="careers.spont_form_sub">Remplissez les champs ci-contre. Notre équipe RH examinera votre profil avec la plus grande attention.</p>
+            <ul class="spont-what-we-look list-unstyled">
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="careers.spont_l1">Experts MEAL & Évaluation</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="careers.spont_l2">Spécialistes Cash & Logistique</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="careers.spont_l3">Consultants en Développement</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="careers.spont_l4">Techniciens Terrain Multi-secteurs</span></li>
+            </ul>
+            <div class="spont-email-hint">
+              <i class="bi bi-envelope-fill"></i>
+              <span>direction@ephodconsulting.org</span>
+            </div>
+          </div>
+
+          <!-- Right form -->
+          <div class="spont-form-fields">
+            <form class="spontaneous-form" id="spontaneousForm" action="mailto:direction@ephodconsulting.org" method="post" enctype="multipart/form-data">
+              <div class="row g-3">
+
+                <!-- Name -->
+                <div class="col-md-6">
+                  <label class="spont-label" for="spontName" data-i18n="careers.lbl_name">Nom complet *</label>
+                  <input type="text" class="spont-input" id="spontName" name="nom" placeholder="Ex: Jean-Pierre KASONGO" required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label class="spont-label" for="spontEmail" data-i18n="careers.lbl_email">Adresse email *</label>
+                  <input type="email" class="spont-input" id="spontEmail" name="email" placeholder="votre.email@exemple.com" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                  <label class="spont-label" for="spontPhone" data-i18n="careers.lbl_phone">Téléphone *</label>
+                  <input type="tel" class="spont-input" id="spontPhone" name="telephone" placeholder="+243 ...">
+                </div>
+
+                <!-- Domain -->
+                <div class="col-md-6">
+                  <label class="spont-label" for="spontDomain" data-i18n="careers.spont_domain_label">Domaine d'expertise *</label>
+                  <select class="spont-input" id="spontDomain" name="domaine" required>
+                    <option value="" disabled selected data-i18n="careers.spont_domain_ph">— Sélectionnez un domaine —</option>
+                    <option value="meal" data-i18n="careers.spont_d1">MEAL & Évaluation</option>
+                    <option value="cash" data-i18n="careers.spont_d2">Cash & Logistique</option>
+                    <option value="sante" data-i18n="careers.spont_d3">Santé Publique</option>
+                    <option value="education" data-i18n="careers.spont_d4">Éducation & Protection</option>
+                    <option value="wash" data-i18n="careers.spont_d5">EHA / WASH</option>
+                    <option value="conseil" data-i18n="careers.spont_d6">Advisory Stratégique</option>
+                    <option value="other" data-i18n="careers.spont_d7">Autre domaine</option>
+                  </select>
+                </div>
+
+                <!-- Experience -->
+                <div class="col-md-6">
+                  <label class="spont-label" for="spontExp" data-i18n="careers.spont_exp_label">Années d'expérience</label>
+                  <select class="spont-input" id="spontExp" name="experience">
+                    <option value="0-2">0 – 2 ans</option>
+                    <option value="3-5">3 – 5 ans</option>
+                    <option value="5-10">5 – 10 ans</option>
+                    <option value="10+">10+ ans</option>
+                  </select>
+                </div>
+
+                <!-- Availability -->
+                <div class="col-md-6">
+                  <label class="spont-label" for="spontAvail" data-i18n="careers.lbl_avail">Disponibilité</label>
+                  <select class="spont-input" id="spontAvail" name="disponibilite">
+                    <option value="immediate" data-i18n="careers.avail_1">Immédiate</option>
+                    <option value="1month" data-i18n="careers.avail_2">Sous 1 mois</option>
+                    <option value="3months" data-i18n="careers.avail_3">Sous 3 mois</option>
+                    <option value="negotiable" data-i18n="careers.avail_4">À négocier</option>
+                  </select>
+                </div>
+
+                <!-- CV Upload -->
+                <div class="col-12">
+                  <label class="spont-label" for="spontCV" data-i18n="careers.lbl_cv">Curriculum Vitae (PDF) *</label>
+                  <div class="spont-upload-zone" id="cvDropZone">
+                    <input type="file" id="spontCV" name="cv" accept=".pdf,.doc,.docx" required>
+                    <div class="spont-upload-content">
+                      <i class="bi bi-cloud-arrow-up-fill"></i>
+                      <span data-i18n="careers.cv_drop">Glissez votre CV ici ou <strong>cliquez pour parcourir</strong></span>
+                      <small data-i18n="careers.cv_format">PDF, DOC — Max 5 Mo</small>
+                    </div>
+                    <div class="spont-upload-preview" id="cvPreview" style="display:none;">
+                      <i class="bi bi-file-earmark-check-fill"></i>
+                      <span id="cvFileName">document.pdf</span>
+                      <button type="button" class="spont-remove-file" id="removeCv">×</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Cover Letter / Motivation -->
+                <div class="col-12">
+                  <label class="spont-label" for="spontLetter" data-i18n="careers.lbl_letter">Message & Lettre de motivation *</label>
+                  <textarea class="spont-input spont-textarea" id="spontLetter" name="motivation" rows="7" placeholder="Décrivez votre parcours, vos compétences clés, et pourquoi vous souhaitez rejoindre EPHOD Consulting..." required></textarea>
+                  <div class="spont-char-counter"><span id="letterCount">0</span> / 1500 caractères</div>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="col-12">
+                  <label class="spont-label" for="spontLinkedIn" data-i18n="careers.lbl_lk">Profil LinkedIn ou Portfolio (optionnel)</label>
+                  <input type="url" class="spont-input" id="spontLinkedIn" name="linkedin" placeholder="https://linkedin.com/in/votre-profil">
+                </div>
+
+                <!-- Submit -->
+                <div class="col-12">
+                  <div class="spont-submit-wrap">
+                    <button type="submit" class="spont-submit-btn" id="spontSubmitBtn">
+                      <span class="spont-btn-icon"><i class="bi bi-send-fill"></i></span>
+                      <span class="spont-btn-text" data-i18n="careers.btn_submit">Soumettre ma candidature</span>
+                    </button>
+                    <p class="spont-disclaimer" data-i18n="careers.form_disc">En soumettant ce formulaire, vous acceptez que vos données soient traitées conformément à notre politique de confidentialité.</p>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== RECRUITMENT MODAL (Elite) ========== -->
   <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
