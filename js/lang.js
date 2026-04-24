@@ -227,6 +227,7 @@ const translations = {
         "srv.modal_need": "Besoin du Client",
         "srv.modal_how": "Notre Méthodologie",
         "srv.modal_value": "Valeur Ajoutée",
+        "srv.modal_close": "Fermer",
 
         "srv.s1_need": "Nécessité de disposer de données probantes et fiables pour orienter les interventions humanitaires et de développement.",
         "srv.s1_how": "Déploiement d'enquêtes terrain (MSNA, Baseline) via outils digitaux (Kobo) et analyse statistique rigoureuse.",
