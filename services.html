@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nos Services — EPHOD Consulting. Expertise en audit, évaluation, formation et logistique de terrain.">
+  <title>EPHOD Consulting — Nos Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-xl" id="mainNavbar">
+    <div class="container">
+      <a class="logo-wrap-elite" href="index.html">
+        <div class="logo-top-elite">
+          <div class="logo-icon-box">
+            <span>E</span>
+          </div>
+          <div class="logo-text-box">
+            <span>EPHOD</span>
+          </div>
+        </div>
+        <div class="logo-sub-text">
+          <span>C</span><span>O</span><span>N</span><span>S</span><span>U</span><span>L</span><span>T</span><span>I</span><span>N</span><span>G</span>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="index.html"><span data-i18n="nav.home">Accueil</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="index.html#hero" class="nav-dropdown-item"><i class="bi bi-house-door icon-red"></i><div><span data-i18n="menu.home_head">En-tête</span><small data-i18n="menu.home_head_sub">Retour au début</small></div></a>
+              <a href="index.html#actualites" class="nav-dropdown-item"><i class="bi bi-newspaper icon-red"></i><div><span data-i18n="menu.home_news">Dernières missions</span><small data-i18n="menu.home_news_sub">Notre actualité récente</small></div></a>
+              <a href="index.html#partners" class="nav-dropdown-item"><i class="bi bi-diagram-3 icon-red"></i><div><span data-i18n="menu.home_partners">Réseau de confiance</span><small data-i18n="menu.home_partners_sub">Nos collaborateurs</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="about.html"><span data-i18n="nav.about">Qui sommes-nous</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="about.html#vision" class="nav-dropdown-item"><i class="bi bi-eye icon-red"></i><div><span data-i18n="menu.about_vision">Notre Vision</span><small data-i18n="menu.about_vision_sub">Valeurs &amp; identité</small></div></a>
+              <a href="about.html#mission" class="nav-dropdown-item"><i class="bi bi-bullseye icon-red"></i><div><span data-i18n="menu.about_mission">Notre Mission</span><small data-i18n="menu.about_mission_sub">Engagements EPHOD</small></div></a>
+              <a href="about.html#equipe" class="nav-dropdown-item"><i class="bi bi-people icon-red"></i><div><span data-i18n="menu.about_team">Notre Équipe</span><small data-i18n="menu.about_team_sub">Experts pluridisciplinaires</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link active" href="services.html"><span data-i18n="nav.services">Nos services</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="services.html#analytics" class="nav-dropdown-item"><i class="bi bi-bar-chart icon-red"></i><div><span data-i18n="menu.srv_audit">Audit &amp; Assurance</span><small data-i18n="menu.srv_audit_sub">Expertise complète</small></div></a>
+              <a href="services.html#strategy" class="nav-dropdown-item"><i class="bi bi-award icon-red"></i><div><span data-i18n="menu.srv_cap">Renforcement des Capacités</span><small data-i18n="menu.srv_cap_sub">Formation &amp; coaching</small></div></a>
+              <a href="services.html#support" class="nav-dropdown-item"><i class="bi bi-headset icon-red"></i><div><span data-i18n="menu.srv_support">Support &amp; Gestion</span><small data-i18n="menu.srv_support_sub">Accompagnement de projets</small></div></a>
+              <a href="services.html#eval" class="nav-dropdown-item"><i class="bi bi-graph-up-arrow icon-red"></i><div><span data-i18n="menu.srv_eval">Évaluations Stratégiques</span><small data-i18n="menu.srv_eval_sub">Mesures d'impact</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="portfolio.html"><span data-i18n="nav.portfolio">Nos réalisations</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="portfolio.html" class="nav-dropdown-item"><i class="bi bi-map icon-red"></i><div><span data-i18n="menu.port_lualaba">Lualaba &amp; Haut-Katanga</span><small data-i18n="menu.port_lualaba_sub">Secteur minier</small></div></a>
+              <a href="portfolio.html" class="nav-dropdown-item"><i class="bi bi-shield-check icon-red"></i><div><span data-i18n="menu.port_kivu">Nord-Kivu</span><small data-i18n="menu.port_kivu_sub">Risques &amp; Protection</small></div></a>
+              <a href="portfolio.html" class="nav-dropdown-item"><i class="bi bi-cash-coin icon-red"></i><div><span data-i18n="menu.port_sud">Sud-Kivu</span><small data-i18n="menu.port_sud_sub">Évaluations PDM</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="ongoing.html"><span data-i18n="nav.ongoing">En cours de réalisation</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="ongoing.html" class="nav-dropdown-item"><i class="bi bi-activity icon-red"></i><div><span data-i18n="menu.ong_missions">Missions Actuelles</span><small data-i18n="menu.ong_missions_sub">Sur le terrain</small></div></a>
+              <a href="ongoing.html" class="nav-dropdown-item"><i class="bi bi-globe-americas icon-red"></i><div><span data-i18n="menu.ong_zones">Zones d'accès complexe</span><small data-i18n="menu.ong_zones_sub">Déploiements RDC</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="careers.html"><span data-i18n="nav.careers">Offres d'emploi</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="careers.html" class="nav-dropdown-item"><i class="bi bi-person-badge icon-red"></i><div><span data-i18n="menu.car_join">Rejoindre l'équipe</span><small data-i18n="menu.car_join_sub">Opportunités EPHOD</small></div></a>
+              <a href="careers.html" class="nav-dropdown-item"><i class="bi bi-person-lines-fill icon-red"></i><div><span data-i18n="menu.car_network">Réseau d'experts</span><small data-i18n="menu.car_network_sub">Consultants indépendants</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="contact.html"><span data-i18n="nav.contact">Contact</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="contact.html" class="nav-dropdown-item"><i class="bi bi-building icon-red"></i><div><span data-i18n="menu.contact_offices">Nos Bureaux</span><small data-i18n="menu.contact_offices_sub">Kinshasa, Goma, Beni</small></div></a>
+              <a href="contact.html" class="nav-dropdown-item"><i class="bi bi-envelope-paper icon-red"></i><div><span data-i18n="menu.contact_write">Nous écrire</span><small data-i18n="menu.contact_write_sub">Demandes &amp; Support</small></div></a>
+            </div>
+          </li>
+        </ul>
+        <button class="lang-btn" onclick="toggleLanguage()" id="langBtn"><i class="bi bi-globe"></i><span id="lang-toggle-text">FR</span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== BANNER (REFINED ELITE) ========== -->
+  <section class="noir-rouge-elite-banner">
+    <div class="orb-1"></div>
+    <div class="orb-2"></div>
+    <div class="container banner-content-elite text-center">
+      <div class="institutional-manifesto typewriter-group mx-auto" style="max-width: 1000px;">
+        <h1 class="elite-banner-title chained" data-i18n="services.banner_giant_elite"><span class="color-noir">DES SOLUTIONS ANALYTIQUES</span> <span class="color-rouge">AU SERVICE DE L'IMPACT</span></h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES GRID ========== -->
+  <section class="py-5" style="background: #f8f9fb; border-top: 1px solid rgba(0,0,0,0.05);">
+    <div class="container py-lg-5">
+      <div class="text-center mb-5 fade-up">
+        <div class="section-label" data-i18n="services.expertise_label">Notre approche</div>
+        <h2 class="srv-grid-heading"><span data-i18n="services.expertise_title_part1">Une expertise</span> <span data-i18n="services.expertise_title_part2">pluridisciplinaire</span></h2>
+      </div>
+      <div class="srv-square-grid">
+        <!-- 01 ÉTUDES & RECHERCHES -->
+        <div class="srv-square-card" id="analytics" data-bs-toggle="modal" data-bs-target="#modalSrv1" style="cursor: pointer;">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">01</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-search"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s1_title">ÉTUDES & RECHERCHES</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s1_desc">Baseline, Market Study, évaluations de besoins (ERM) et diagnostics institutionnels complets.</p>
+          <div class="srv-sq-footer mt-auto pt-4">
+             <span class="btn-elite-simple" data-i18n="services.btn_more">EN SAVOIR PLUS <i class="bi bi-arrow-right ms-2"></i></span>
+          </div>
+        </div>
+
+        <!-- 02 EVALUATIONS INDÉPENDANTES -->
+        <div class="srv-square-card" id="eval" data-bs-toggle="modal" data-bs-target="#modalSrv2" style="cursor: pointer;">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">02</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-shield-shaded"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s2_title">EVALUATIONS INDÉPENDANTES</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s2_desc">Évaluations à mi-parcours et finales selon les critères OCDE-CAD et CHS Alliance.</p>
+          <div class="srv-sq-footer mt-auto pt-4">
+             <span class="btn-elite-simple" data-i18n="services.btn_more">EN SAVOIR PLUS <i class="bi bi-arrow-right ms-2"></i></span>
+          </div>
+        </div>
+
+        <!-- 03 SERVICES MONÉTAIRES -->
+        <div class="srv-square-card" id="cash" data-bs-toggle="modal" data-bs-target="#modalSrv3" style="cursor: pointer;">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">03</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-cash-stack"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s3_title">SERVICES MONÉTAIRES SÉCURISÉS</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s3_desc">Appui aux interventions Cash (Mobile Money, Cash Express, Rémittences) en zones à accès complexe.</p>
+          <div class="srv-sq-footer mt-auto pt-4">
+             <span class="btn-elite-simple" data-i18n="services.btn_more">EN SAVOIR PLUS <i class="bi bi-arrow-right ms-2"></i></span>
+          </div>
+        </div>
+
+        <!-- 04 FORMATIONS -->
+        <div class="srv-square-card" id="strategy" data-bs-toggle="modal" data-bs-target="#modalSrv4" style="cursor: pointer;">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">04</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-people"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s4_title">FORMATIONS & CAPACITATION</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s4_desc">Renforcement des capacités en MEAL, gestion de projet et outils de collecte (KoboToolbox/ODK).</p>
+          <div class="srv-sq-footer mt-auto pt-4">
+             <span class="btn-elite-simple" data-i18n="services.btn_more">EN SAVOIR PLUS <i class="bi bi-arrow-right ms-2"></i></span>
+          </div>
+        </div>
+
+        <!-- 05 LOGISTIQUE -->
+        <div class="srv-square-card" id="support" data-bs-toggle="modal" data-bs-target="#modalSrv5" style="cursor: pointer;">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">05</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-truck"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s5_title">LOGISTIQUE DE TERRAIN</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s5_desc">Appui à la livraison de biens et services dans les zones géographiques difficiles et fragiles.</p>
+          <div class="srv-sq-footer mt-auto pt-4">
+             <span class="btn-elite-simple" data-i18n="services.btn_more">EN SAVOIR PLUS <i class="bi bi-arrow-right ms-2"></i></span>
+          </div>
+        </div>
+
+        <!-- 06 INTÉGRATION -->
+        <div class="srv-square-card" id="protection" data-bs-toggle="modal" data-bs-target="#modalSrv6" style="cursor: pointer;">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">06</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-shield-check"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s6_title">INTÉGRATION TRANSVERSALE</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s6_desc">Analyses Genre, Protection, Inclusion (AAP) et Études de sensibilité aux conflits.</p>
+          <div class="srv-sq-footer mt-auto pt-4">
+             <span class="btn-elite-simple" data-i18n="services.btn_more">EN SAVOIR PLUS <i class="bi bi-arrow-right ms-2"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STANDARDS DE QUALITÉ (ELITE HUB) ========== -->
+  <section class="quality-hub-section py-5">
+    <div class="container py-lg-5">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <div class="section-label" data-i18n="home.method_label">Rigueur & Qualité</div>
+          <h2 class="srv-grid-heading mb-0" style="text-align: left;"><span class="color-noir" data-i18n="home.method_title_part1">Standards</span> <span class="color-rouge" data-i18n="home.method_title_part2">Internationaux</span></h2>
+        </div>
+        <div class="col-lg-6">
+          <p class="text-muted mb-0 ps-lg-4 border-start" style="border-width: 3px !important; border-color: var(--primary) !important;" data-i18n="home.method_desc2">
+            Nos interventions sont structurées selon les référentiels mondiaux les plus exigeants pour garantir l'efficacité, la transparence et la redevabilité de chaque mission.
+          </p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <!-- OCDE-CAD Card -->
+        <div class="col-lg-6">
+          <div class="quality-elite-card">
+            <div class="quality-card-icon"><i class="bi bi-patch-check-fill"></i></div>
+            <div class="quality-card-content">
+              <div class="quality-badge" data-i18n="services.oecd_badge">RÉFÉRENTIEL MAJEUR</div>
+              <h4 class="fw-900 mt-2 mb-3" data-i18n="services.oecd_title">CRITÈRES OCDE-CAD</h4>
+              <p class="mb-4 opacity-75" data-i18n="services.oecd_desc">La pierre angulaire de l'évaluation du développement. Nous intégrons les 5 piliers fondamentaux dans chaque rapport :</p>
+              <div class="quality-pills-row">
+                 <span class="q-pill" data-i18n="services.oecd_p1">Pertinence</span>
+                 <span class="q-pill" data-i18n="services.oecd_p2">Efficacité</span>
+                 <span class="q-pill" data-i18n="services.oecd_p3">Efficience</span>
+                 <span class="q-pill" data-i18n="services.oecd_p4">Impact</span>
+                 <span class="q-pill" data-i18n="services.oecd_p5">Durabilité</span>
+              </div>
+            </div>
+            <div class="quality-card-bg-icon">OECD</div>
+          </div>
+        </div>
+
+        <!-- CHS Card -->
+        <div class="col-lg-6">
+          <div class="quality-elite-card">
+            <div class="quality-card-icon"><i class="bi bi-shield-lock-fill"></i></div>
+            <div class="quality-card-content">
+              <div class="quality-badge" data-i18n="services.chs_badge">STANDARD HUMANITAIRE</div>
+              <h4 class="fw-900 mt-2 mb-3" data-i18n="services.chs_title">CHS ALLIANCE</h4>
+              <p class="mb-4 opacity-75" data-i18n="services.chs_desc">Notre engagement inconditionnel pour une aide redevable et centrée sur la dignité des populations affectées :</p>
+              <ul class="list-unstyled detail-list">
+                 <li><i class="bi bi-dot text-primary"></i> <span data-i18n="services.chs_p1">Engagement Zéro Tolérance (PSEA)</span></li>
+                 <li><i class="bi bi-dot text-primary"></i> <span data-i18n="services.chs_p2">Mécanismes de redevabilité (AAP)</span></li>
+                 <li><i class="bi bi-dot text-primary"></i> <span data-i18n="services.chs_p3">Apprentissage continu & Amélioration</span></li>
+              </ul>
+            </div>
+            <div class="quality-card-bg-icon">CHS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FULL INSTITUTIONAL FOOTER ========== -->
+
+  <!-- ========== MODALS DÉTAILS SERVICES ========== -->
+  
+  <!-- Modal 1: Études -->
+  <div class="modal fade" id="modalSrv1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content border-0 overflow-hidden" style="border-radius:24px;">
+        <div class="modal-header bg-dark text-white py-4 border-0">
+          <h5 class="modal-title fw-900"><span class="color-rouge">01.</span> ÉTUDES & RECHERCHES</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+           <h6 class="fw-bold text-primary mb-4">NOTRE EXPERTISE ANALYTIQUE</h6>
+           <p class="mb-4">EPHOD Consulting déploie des méthodologies rigoureuses pour éclairer la prise de décision stratégique :</p>
+           <ul class="list-unstyled">
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Baseline & Endline Surveys :</strong> Établissement de situations de référence et mesure finale des indicateurs.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Études de Marché & Faisabilité :</strong> Analyse de l'offre, de la demande et des chaines de valeur locales.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Diagnostics Institutionnels :</strong> Audit des capacités organisationnelles et opérationnelles.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Analyses Sectorielles :</strong> Santé publique, Mines, Agriculture et EHA.</div></li>
+           </ul>
+        </div>
+        <div class="modal-footer bg-light border-0 py-3">
+          <button type="button" class="btn btn-dark px-4 rounded-pill" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Évaluations -->
+  <div class="modal fade" id="modalSrv2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content border-0 overflow-hidden" style="border-radius:24px;">
+        <div class="modal-header bg-dark text-white py-4 border-0">
+          <h5 class="modal-title fw-900"><span class="color-rouge">02.</span> ÉVALUATIONS INDÉPENDANTES</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+           <h6 class="fw-bold text-primary mb-4">REDEVABILITÉ & PERFORMANCE</h6>
+           <p class="mb-4">Nous évaluons l'impact de vos programmes selon les plus hauts standards internationaux :</p>
+           <ul class="list-unstyled">
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Critères OCDE-CAD :</strong> Analyse de pertinence, efficacité, efficience, impact et durabilité.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Evaluations Real-Time :</strong> Ajustements techniques en cours d'exécution pour optimiser l'impact.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Audit de Qualité (CHS) :</strong> Vérification de la conformité aux standards Humanitaires Fondamentaux.</div></li>
+           </ul>
+        </div>
+        <div class="modal-footer bg-light border-0 py-3">
+          <button type="button" class="btn btn-dark px-4 rounded-pill" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Cash -->
+  <div class="modal fade" id="modalSrv3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content border-0 overflow-hidden" style="border-radius:24px;">
+        <div class="modal-header bg-dark text-white py-4 border-0">
+          <h5 class="modal-title fw-900"><span class="color-rouge">03.</span> SERVICES MONÉTAIRES</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+           <h6 class="fw-bold text-primary mb-4">SOLUTIONS CASH AGiles</h6>
+           <p class="mb-4">EPHOD facilite les transferts monétaires sécurisés dans les zones à haut risque :</p>
+           <ul class="list-unstyled">
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Mobile Money Displacement :</strong> Gestion des flux via les opérateurs locaux en zones fragiles.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Vérification PDM (Post Distribution Monitoring) :</strong> Suivi de l'utilisation des fonds par les bénéficiaires.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Vendor Mapping :</strong> Identification et contractualisation de commerçants locaux pour les systèmes de coupons.</div></li>
+           </ul>
+        </div>
+        <div class="modal-footer bg-light border-0 py-3">
+          <button type="button" class="btn btn-dark px-4 rounded-pill" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Formations -->
+  <div class="modal fade" id="modalSrv4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content border-0 overflow-hidden" style="border-radius:24px;">
+        <div class="modal-header bg-dark text-white py-4 border-0">
+          <h5 class="modal-title fw-900"><span class="color-rouge">04.</span> FORMATIONS & CAPACITATION</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+           <h6 class="fw-bold text-primary mb-4">DÉVELOPPEMENT DES COMPÉTENCES</h6>
+           <p class="mb-4">Renforcement des capacités de vos équipes terrain et partenaires locaux :</p>
+           <ul class="list-unstyled">
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Cycle de Projet & MEAL :</strong> Conception de cadres logiques et de systèmes de suivi-évaluation.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Digital Data Collection :</strong> Formation avancée sur KoboToolbox, ODK et PowerBI.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Gouvernance & Management :</strong> Leadership humanitaire et management en contextes de crise.</div></li>
+           </ul>
+        </div>
+        <div class="modal-footer bg-light border-0 py-3">
+          <button type="button" class="btn btn-dark px-4 rounded-pill" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Logistique -->
+  <div class="modal fade" id="modalSrv5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 overflow-hidden" style="border-radius:24px;">
+        <div class="modal-header bg-dark text-white py-4 border-0">
+          <h5 class="modal-title fw-900"><span class="color-rouge">05.</span> LOGISTIQUE DE TERRAIN</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+           <h6 class="fw-bold text-primary mb-4">SUPPORT OPÉRATIONNEL</h6>
+           <p class="mb-4">Optimisation de votre chaîne d'approvisionnement en milieux hostiles :</p>
+           <ul class="list-unstyled">
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Last-Mile Delivery :</strong> Acheminement de biens critiques (médicaments, intrants) vers les zones isolées.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Gestion d'entrepôts :</strong> Stockage et inventaire assisté par outils numériques.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Support au Déploiement :</strong> Mise en place rapide de bases de vie et de bureaux mobiles.</div></li>
+           </ul>
+        </div>
+        <div class="modal-footer bg-light border-0 py-3">
+          <button type="button" class="btn btn-dark px-4 rounded-pill" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Transversal -->
+  <div class="modal fade" id="modalSrv6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 overflow-hidden" style="border-radius:24px;">
+        <div class="modal-header bg-dark text-white py-4 border-0">
+          <h5 class="modal-title fw-900"><span class="color-rouge">06.</span> INTÉGRATION TRANSVERSALE</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5">
+           <h6 class="fw-bold text-primary mb-4">ÉQUITÉ & SENSIBILITÉ</h6>
+           <p class="mb-4">Veiller à l'inclusion et à la dignité dans toutes les phases du projet :</p>
+           <ul class="list-unstyled">
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Protection & AAP :</strong> Mise en place de mécanismes de plaintes et de redevabilité envers les bénéficiaires.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Analyse de Sensibilité aux Conflits :</strong> Évaluation de l'impact 'Do No Harm' de vos interventions.</div></li>
+             <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle text-primary me-3 mt-1"></i> <div><strong>Genre & Inclusion :</strong> Audit et recommandations pour l'équité hommes-femmes et l'appui aux vulnérables.</div></li>
+           </ul>
+        </div>
+        <div class="modal-footer bg-light border-0 py-3">
+          <button type="button" class="btn btn-dark px-4 rounded-pill" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Column 1: Brand & Identity -->
+        <div class="col-lg-4">
+          <div class="footer-brand-wrap">
+            <div class="footer-logo-main">EPHOD</div>
+            <div class="footer-logo-sub">CONSULTING</div>
+          </div>
+          <p class="footer-desc-text mt-4">
+             Cabinet d'expertise humanitaire et de développement. Spécialisé en planification, MEAL et opérationnalisation du développement.
+          </p>
+          <div class="footer-legal-grid mt-4">
+            <div class="legal-item"><strong>RCCM:</strong> CD/KNG/RCCM/25-B-03958</div>
+            <div class="legal-item"><strong>ID NAT:</strong> 01-H5300-N88322C</div>
+            <div class="legal-item"><strong>NIF:</strong> A2559012X | <strong>UNGM:</strong> 1175536</div>
+            <div class="legal-item"><strong>INPP:</strong> 166976,0</div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-h4-title" data-i18n="footer.nav_title">NAVIGATION</h4>
+          <ul class="footer-nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="about.html" data-i18n="nav.about">Qui sommes-nous</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Nos services</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">Nos réalisations</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Regional Offices -->
+        <div class="col-lg-3 col-md-4">
+          <h4 class="footer-h4-title" data-i18n="footer.offices_title">NOS BUREAUX</h4>
+          <ul class="footer-info-list">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span><strong>KINSHASA:</strong> Q. Ma Campagne, Av. Kapaya N°03, Ngaliema</span>
+            </li>
+            <li class="mt-3">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span><strong>GOMA:</strong> Q. Kyeshero, Av. Kituku N°13</span>
+            </li>
+            <li class="mt-3">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span><strong>BENI:</strong> RN4, Face ENERA, N°6, Av. Opienge</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Direct -->
+        <div class="col-lg-3 col-md-4">
+          <h4 class="footer-h4-title" data-i18n="footer.direct_label">CONTACT DIRECT</h4>
+          <ul class="footer-info-list">
+            <li>
+              <i class="bi bi-telephone-plus-fill"></i>
+              <span>+243 830517419</span>
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-whatsapp"></i>
+              <span>+243 975418640</span>
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-envelope-check-fill"></i>
+              <span>direction@ephodconsulting.org</span>
+            </li>
+          </ul>
+          <div class="footer-social-icons mt-4">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom-elite">
+        <p>&copy; 2026 EPHOD CONSULTING. Tous droits réservés.</p>
+        <div class="f-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

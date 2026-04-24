@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EPHOD Consulting — Cabinet d'expertise humanitaire et de développement. Évaluations indépendantes, advisory stratégique et ingénierie de projets en RDC et en Afrique.">
+  <title>EPHOD Consulting — Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-xl" id="mainNavbar">
+    <div class="container">
+      <a class="logo-wrap-elite" href="index.html">
+        <div class="logo-top-elite">
+          <div class="logo-icon-box">
+            <span>E</span>
+          </div>
+          <div class="logo-text-box">
+            <span>EPHOD</span>
+          </div>
+        </div>
+        <div class="logo-sub-text">
+          <span>C</span><span>O</span><span>N</span><span>S</span><span>U</span><span>L</span><span>T</span><span>I</span><span>N</span><span>G</span>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="index.html"><span data-i18n="nav.home">Accueil</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="index.html#hero" class="nav-dropdown-item"><i class="bi bi-house-door icon-red"></i><div><span data-i18n="menu.home_head">En-tête</span><small data-i18n="menu.home_head_sub">Retour au début</small></div></a>
+              <a href="index.html#actualites" class="nav-dropdown-item"><i class="bi bi-newspaper icon-red"></i><div><span data-i18n="menu.home_news">Dernières missions</span><small data-i18n="menu.home_news_sub">Notre actualité récente</small></div></a>
+              <a href="index.html#partners" class="nav-dropdown-item"><i class="bi bi-diagram-3 icon-red"></i><div><span data-i18n="menu.home_partners">Réseau de confiance</span><small data-i18n="menu.home_partners_sub">Nos collaborateurs</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="about.html"><span data-i18n="nav.about">Qui sommes-nous</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="about.html#vision" class="nav-dropdown-item"><i class="bi bi-eye icon-red"></i><div><span data-i18n="menu.about_vision">Notre Vision</span><small data-i18n="menu.about_vision_sub">Valeurs &amp; identité</small></div></a>
+              <a href="about.html#mission" class="nav-dropdown-item"><i class="bi bi-bullseye icon-red"></i><div><span data-i18n="menu.about_mission">Notre Mission</span><small data-i18n="menu.about_mission_sub">Engagements EPHOD</small></div></a>
+              <a href="about.html#equipe" class="nav-dropdown-item"><i class="bi bi-people icon-red"></i><div><span data-i18n="menu.about_team">Notre Équipe</span><small data-i18n="menu.about_team_sub">Experts pluridisciplinaires</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="services.html"><span data-i18n="nav.services">Nos services</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="services.html#analytics" class="nav-dropdown-item"><i class="bi bi-bar-chart icon-red"></i><div><span data-i18n="menu.srv_audit">Audit &amp; Assurance</span><small data-i18n="menu.srv_audit_sub">Expertise complète</small></div></a>
+              <a href="services.html#strategy" class="nav-dropdown-item"><i class="bi bi-award icon-red"></i><div><span data-i18n="menu.srv_cap">Renforcement des Capacités</span><small data-i18n="menu.srv_cap_sub">Formation &amp; coaching</small></div></a>
+              <a href="services.html#support" class="nav-dropdown-item"><i class="bi bi-headset icon-red"></i><div><span data-i18n="menu.srv_support">Support &amp; Gestion</span><small data-i18n="menu.srv_support_sub">Accompagnement de projets</small></div></a>
+              <a href="services.html#eval" class="nav-dropdown-item"><i class="bi bi-graph-up-arrow icon-red"></i><div><span data-i18n="menu.srv_eval">Évaluations Stratégiques</span><small data-i18n="menu.srv_eval_sub">Mesures d'impact</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="portfolio.html"><span data-i18n="nav.portfolio">Nos réalisations</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="portfolio.html" class="nav-dropdown-item"><i class="bi bi-map icon-red"></i><div><span data-i18n="menu.port_lualaba">Lualaba &amp; Haut-Katanga</span><small data-i18n="menu.port_lualaba_sub">Secteur minier</small></div></a>
+              <a href="portfolio.html" class="nav-dropdown-item"><i class="bi bi-shield-check icon-red"></i><div><span data-i18n="menu.port_kivu">Nord-Kivu</span><small data-i18n="menu.port_kivu_sub">Risques &amp; Protection</small></div></a>
+              <a href="portfolio.html" class="nav-dropdown-item"><i class="bi bi-cash-coin icon-red"></i><div><span data-i18n="menu.port_sud">Sud-Kivu</span><small data-i18n="menu.port_sud_sub">Évaluations PDM</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="ongoing.html"><span data-i18n="nav.ongoing">En cours de réalisation</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="ongoing.html" class="nav-dropdown-item"><i class="bi bi-activity icon-red"></i><div><span data-i18n="menu.ong_missions">Missions Actuelles</span><small data-i18n="menu.ong_missions_sub">Sur le terrain</small></div></a>
+              <a href="ongoing.html" class="nav-dropdown-item"><i class="bi bi-globe-americas icon-red"></i><div><span data-i18n="menu.ong_zones">Zones d'accès complexe</span><small data-i18n="menu.ong_zones_sub">Déploiements RDC</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="careers.html"><span data-i18n="nav.careers">Offres d'emploi</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="careers.html" class="nav-dropdown-item"><i class="bi bi-person-badge icon-red"></i><div><span data-i18n="menu.car_join">Rejoindre l'équipe</span><small data-i18n="menu.car_join_sub">Opportunités EPHOD</small></div></a>
+              <a href="careers.html" class="nav-dropdown-item"><i class="bi bi-person-lines-fill icon-red"></i><div><span data-i18n="menu.car_network">Réseau d'experts</span><small data-i18n="menu.car_network_sub">Consultants indépendants</small></div></a>
+            </div>
+          </li>
+          
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="contact.html"><span data-i18n="nav.contact">Contact</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
+            <div class="nav-dropdown">
+              <a href="contact.html" class="nav-dropdown-item"><i class="bi bi-building icon-red"></i><div><span data-i18n="menu.contact_offices">Nos Bureaux</span><small data-i18n="menu.contact_offices_sub">Kinshasa, Goma, Beni</small></div></a>
+              <a href="contact.html" class="nav-dropdown-item"><i class="bi bi-envelope-paper icon-red"></i><div><span data-i18n="menu.contact_write">Nous écrire</span><small data-i18n="menu.contact_write_sub">Demandes &amp; Support</small></div></a>
+            </div>
+          </li>
+        </ul>
+        <button class="lang-btn" onclick="toggleLanguage()" id="langBtn"><i class="bi bi-globe"></i><span id="lang-toggle-text">FR</span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO — IMAGE FIXE + MINI SLIDER ========== -->
+  <section class="hero-single" id="hero">
+    <div class="hero-single-bg" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="hero-single-inner">
+      <div class="hero-rmda-box hero-rmda-box--left">
+
+        <!-- Nom de marque stacked -->
+        <div class="hero-brand-giant hero-brand-giant--stacked">
+          EPHOD <br>
+          <span class="brand-sub-consulting">CONSULTING</span>
+        </div>
+        
+        <div class="hero-brand-separator separator--left"></div>
+
+        <!-- Description pro alignée à gauche -->
+        <h1 class="hero-rmda-title title--left">
+          <span class="hero-tw-line" id="slide1-line1"></span><br>
+          <span class="hero-accent hero-tw-line" id="slide1-line2"></span>
+        </h1>
+
+        <!-- Mini slider rotatif -->
+        <div class="hero-mini-frame frame--left">
+          <div class="swiper hero-mini-swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide hero-mini-slide">
+                <div class="hero-mini-img" style="background-image:url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=400&q=80');"></div>
+                <span data-i18n="srv.s1_title">Études &amp; Recherches</span>
+              </div>
+
+              <div class="swiper-slide hero-mini-slide">
+                <div class="hero-mini-img" style="background-image:url('https://images.unsplash.com/photo-1454165833767-027ffecd1ffc?auto=format&fit=crop&w=400&q=80');"></div>
+                <span data-i18n="srv.s2_title">Évaluations Indépendantes</span>
+              </div>
+
+              <div class="swiper-slide hero-mini-slide">
+                <div class="hero-mini-img" style="background-image:url('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=400&q=80');"></div>
+                <span data-i18n="srv.s4_title">Formations &amp; Capacitation</span>
+              </div>
+
+              <div class="swiper-slide hero-mini-slide">
+                <div class="hero-mini-img" style="background-image:url('https://images.unsplash.com/photo-1541872705-1f73c6400ec9?auto=format&fit=crop&w=400&q=80');"></div>
+                <span data-i18n="srv.s8_title">Logistique de Terrain</span>
+              </div>
+
+              <div class="swiper-slide hero-mini-slide">
+                <div class="hero-mini-img" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=80');"></div>
+                <span data-i18n="srv.s9_title">Genre, Protection &amp; AAP</span>
+              </div>
+
+              <div class="swiper-slide hero-mini-slide">
+                <div class="hero-mini-img" style="background-image:url('https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=400&q=80');"></div>
+                <span data-i18n="srv.s7_title">Services Cash Sécurisés</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Fin mini slider -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== SERVICES — SQUARE CARDS GRID ========== -->
+  <section class="srv-grid-section" id="services">
+    <div class="container">
+      <div class="srv-grid-header text-center">
+        <span class="section-label-rmda" data-i18n="home.services_label">NOS DOMAINES</span>
+        <h2 class="srv-grid-heading" data-i18n="home.services_heading">Ce que nous faisons pour vous.</h2>
+      </div>
+      <div class="srv-square-grid">
+
+        <!-- 01 ÉTUDES & RECHERCHES -->
+        <a href="services.html#analytics" class="srv-square-card">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">01</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-search"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s1_title">ÉTUDES & RECHERCHES</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s1_desc">Baseline, Market Study, évaluations de besoins (ERM) et diagnostics institutionnels complets.</p>
+        </a>
+
+        <!-- 02 Évaluations Institutionnelles -->
+        <a href="services.html" class="srv-square-card">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">02</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-building-check"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s2_title">ÉVALUATIONS INDÉPENDANTES</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s2_desc">Évaluations à mi-parcours et finales selon les critères OCDE-CAD et CHS Alliance.</p>
+        </a>
+
+        <!-- 03 Third Party Monitoring -->
+        <a href="services.html" class="srv-square-card">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">03</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-shield-check"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s3_title">SERVICES MONÉTAIRES SÉCURISÉS</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s3_desc">Appui aux interventions Cash (Mobile Money, Cash Express, Rémittences) en zones à accès complexe.</p>
+        </a>
+
+        <!-- 04 Ingénierie de Projets -->
+        <a href="services.html" class="srv-square-card">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">04</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-gear-wide-connected"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s4_title">FORMATIONS & CAPACITATION</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s4_desc">Renforcement des capacités en MEAL, gestion de projet et outils de collecte (KoboToolbox/ODK).</p>
+        </a>
+
+        <!-- 05 Advisory Stratégique -->
+        <a href="services.html" class="srv-square-card">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">05</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-lightbulb"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s5_title">LOGISTIQUE DE TERRAIN</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s5_desc">Appui à la livraison de biens et services dans les zones géographiques difficiles et fragiles.</p>
+        </a>
+
+        <!-- 06 Formations Professionnelles -->
+        <a href="services.html" class="srv-square-card">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">06</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-mortarboard"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s6_title">INTÉGRATION TRANSVERSALE</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s6_desc">Analyses Genre, Protection, Inclusion (AAP) et Études de sensibilité aux conflits.</p>
+        </a>
+
+        <!-- 07 Services Cash Sécurisés -->
+        <a href="services.html" class="srv-square-card">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">07</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-cash-coin"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s7_title">SERVICES CASH SÉCURISÉS</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s7_desc">Appui aux interventions en cash (Mobile Money, Remittances) et études de marché en zones difficiles.</p>
+        </a>
+
+        <!-- 08 Logistique de Terrain -->
+        <a href="services.html" class="srv-square-card">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">08</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-map"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s8_title">LOGISTIQUE DE TERRAIN</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s8_desc">Support au dernier kilomètre, cartographie SIG et collecte digitalisée en contextes fragiles et d'urgence.</p>
+        </a>
+
+        <!-- 09 Genre, Protection & AAP -->
+        <a href="services.html" class="srv-square-card">
+          <div class="srv-sq-top">
+            <span class="srv-sq-num">09</span>
+            <div class="srv-sq-plus"><i class="bi bi-plus"></i></div>
+          </div>
+          <div class="srv-sq-icon"><i class="bi bi-people"></i></div>
+          <h3 class="srv-sq-title" data-i18n="srv.s9_title">GENRE, PROTECTION & AAP</h3>
+          <p class="srv-sq-desc" data-i18n="srv.s9_desc">Analyses transversales Genre, Protection, Inclusion et Sensibilité aux conflits intégrées dans chaque mission.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ========== ACTUALITÉS / DERNIÈRES MISSIONS ========== -->
+  <section class="ephod-news-slider-section py-5 my-5" id="actualites">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side Title & Button -->
+        <div class="col-lg-5 mb-5 mb-lg-0 pe-lg-5 fade-left">
+          <div class="news-accent-box mb-4">
+            <div class="news-vertical-line"></div>
+            <h2 class="text-uppercase m-0" style="color: var(--primary); font-weight: 900; line-height: 1.1; font-size: 2.8rem; letter-spacing: -1px;">
+              <span data-i18n="home.news_title_line1">RETROUVEZ ICI</span><br>
+              <span data-i18n="home.news_title_line2">NOS DERNIÈRES</span><br>
+              <span data-i18n="home.news_title_line3">ACTUALITÉS..</span>
+            </h2>
+          </div>
+          <a href="portfolio.html" class="btn text-white px-5 py-3 fw-bold mt-2 btn-ephod-primary" style="border-radius: 4px; text-transform: none;">
+            <span data-i18n="home.news_btn">Toutes nos actualités</span> <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+        
+        <!-- Right Side Swiper -->
+        <div class="col-lg-7 scale-in">
+          <div class="swiper news-slider-swiper" style="height: 450px; border-radius: 6px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+            <div class="swiper-wrapper">
+            
+              <!-- Slide 1 -->
+              <div class="swiper-slide position-relative">
+                <div style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80'); height: 100%; width: 100%; background-size: cover; background-position: center; position: absolute; top:0; left:0;"></div>
+                <div class="position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white px-4 px-md-5 z-2" style="top:0; left:0;">
+                  <span class="text-uppercase mb-2 d-block" style="font-size: 0.85rem; letter-spacing: 1px; font-weight: 700; color: #fff;" data-i18n="home.news1_zone">LUALABA &amp; HAUT-KATANGA</span>
+                  <h3 class="fw-bold mb-3" style="font-family: 'Inter', sans-serif; font-size: clamp(1.8rem, 3vw, 2.5rem); text-shadow: 0 4px 10px rgba(0,0,0,0.5);" data-i18n="home.news1_title">ProGERIM II — GIZ</h3>
+                  <p class="mb-4" style="font-size: 1rem; opacity: 0.95; max-width: 90%; margin: 0 auto;" data-i18n="home.news1_desc">Collecte et analyse de données relatives à la bonne gestion des revenus infranationaux du secteur minier en RDC.</p>
+                  <a href="portfolio.html" class="btn text-white px-4 py-2 mt-4" style="background-color: var(--primary); font-weight: bold; border-radius: 4px;" data-i18n="home.news_more">En savoir plus</a>
+                </div>
+              </div>
+  
+              <!-- Slide 2 -->
+              <div class="swiper-slide position-relative">
+                <div style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1454165833767-027ffecd1ffc?auto=format&fit=crop&w=1200&q=80'); height: 100%; width: 100%; background-size: cover; background-position: center; position: absolute; top:0; left:0;"></div>
+                <div class="position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white px-4 px-md-5 z-2" style="top:0; left:0;">
+                  <span class="text-uppercase mb-2 d-block" style="font-size: 0.85rem; letter-spacing: 1px; font-weight: 700; color: #fff;" data-i18n="home.news2_zone">NORD-KIVU — Kayna &amp; Lubero</span>
+                  <h3 class="fw-bold mb-3" style="font-family: 'Inter', sans-serif; font-size: clamp(1.8rem, 3vw, 2.5rem); text-shadow: 0 4px 10px rgba(0,0,0,0.5);" data-i18n="home.news2_title">Étude JRS 2026</h3>
+                  <p class="mb-4" style="font-size: 1rem; opacity: 0.95; max-width: 90%; margin: 0 auto;" data-i18n="home.news2_desc">Étude de marché et évaluation des risques de protection liés aux interventions en cash pour populations déplacées.</p>
+                  <a href="portfolio.html" class="btn text-white px-4 py-2 mt-4" style="background-color: var(--primary); font-weight: bold; border-radius: 4px;" data-i18n="home.news_more">En savoir plus</a>
+                </div>
+              </div>
+  
+              <!-- Slide 3 -->
+              <div class="swiper-slide position-relative">
+                <div style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1541872705-1f73c6400ec9?auto=format&fit=crop&w=1200&q=80'); height: 100%; width: 100%; background-size: cover; background-position: center; position: absolute; top:0; left:0;"></div>
+                <div class="position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white px-4 px-md-5 z-2" style="top:0; left:0;">
+                  <span class="text-uppercase mb-2 d-block" style="font-size: 0.85rem; letter-spacing: 1px; font-weight: 700; color: #fff;" data-i18n="home.news3_zone">SUD-KIVU</span>
+                  <h3 class="fw-bold mb-3" style="font-family: 'Inter', sans-serif; font-size: clamp(1.8rem, 3vw, 2.5rem); text-shadow: 0 4px 10px rgba(0,0,0,0.5);" data-i18n="home.news3_title">PDM Christian Aid</h3>
+                  <p class="mb-4" style="font-size: 1rem; opacity: 0.95; max-width: 90%; margin: 0 auto;" data-i18n="home.news3_desc">Post Distribution Monitoring — évaluation des résultats d'interventions cash dans les zones à accès complexe du Sud-Kivu.</p>
+                  <a href="portfolio.html" class="btn text-white px-4 py-2 mt-4" style="background-color: var(--primary); font-weight: bold; border-radius: 4px;" data-i18n="home.news_more">En savoir plus</a>
+                </div>
+              </div>
+  
+            </div>
+            <div class="swiper-pagination news-slider-pagination position-absolute" style="bottom: 15px !important;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PARTENAIRES ========== -->
+  <section class="ephod-partners-section py-5" style="background-color: #fcfcfc;" id="partners">
+    <div class="container text-center mb-5">
+      <span class="section-label-rmda d-inline-block mb-3" data-i18n="home.partners_label">RÉSEAU DE CONFIANCE</span>
+      <h2 class="srv-grid-heading mx-auto text-center" data-i18n="home.partners_heading">
+        <span style="color: #111111;">Nos Partenaires &amp;</span>
+        <span style="background: linear-gradient(90deg, #8C1338, #FF2E2E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; margin-left: 8px;">Collaborateurs.</span>
+      </h2>
+    </div>
+    <div class="container">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-5 align-items-center justify-content-center">
+        <!-- Mercy Corps -->
+        <div class="col text-center"><img src="img/partners/mercy_corps.png" alt="Mercy Corps" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- Fondation Follereau -->
+        <div class="col text-center"><img src="img/partners/fondation_follereau.png" alt="Fondation Follereau" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- Save the Children -->
+        <div class="col text-center"><img src="img/partners/save_the_children.png" alt="Save the Children" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- Christian Aid -->
+        <div class="col text-center"><img src="img/partners/christian_aid.png" alt="Christian Aid" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- JRS -->
+        <div class="col text-center"><img src="img/partners/jrs.png" alt="JRS" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- UNICEF -->
+        <div class="col text-center"><img src="img/partners/unicef.png" alt="UNICEF" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- UNHCR -->
+        <div class="col text-center"><img src="img/partners/unhcr.png" alt="UNHCR" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- Umoja in Action -->
+        <div class="col text-center"><img src="img/partners/umoja.png" alt="Umoja In Action" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- RACOJ Nord-Kivu -->
+        <div class="col text-center"><img src="img/partners/racoj.jpg" alt="RACOJ Nord-Kivu" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- La Benevolencija Grands Lacs -->
+        <div class="col text-center"><img src="img/partners/benevolencija.png" alt="La Benevolencija Grands Lacs" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- ODH -->
+        <div class="col text-center"><img src="img/partners/odh.png" alt="ODH" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+        <!-- PARISS -->
+        <div class="col text-center"><img src="img/partners/pariss.jpg" alt="PARISS" style="max-height:100px; max-width:100%; transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+
+<!-- ========== RMDA GROUP EXACT FOOTER ========== -->
+  <!-- ========== FULL INSTITUTIONAL FOOTER ========== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Column 1: Brand & Identity -->
+        <div class="col-lg-4">
+          <div class="footer-brand-wrap">
+            <div class="footer-logo-main">EPHOD</div>
+            <div class="footer-logo-sub">CONSULTING</div>
+          </div>
+          <p class="footer-desc-text mt-4">
+            Cabinet d'expertise humanitaire et de développement. Spécialisé en planification, MEAL et opérationnalisation du développement.
+          </p>
+          <div class="footer-legal-grid mt-4">
+            <div class="legal-item"><strong>RCCM:</strong> CD/KNG/RCCM/25-B-03958</div>
+            <div class="legal-item"><strong>ID NAT:</strong> 01-H5300-N88322C</div>
+            <div class="legal-item"><strong>NIF:</strong> A2559012X | <strong>UNGM:</strong> 1175536</div>
+            <div class="legal-item"><strong>INPP:</strong> 166976,0</div>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="col-lg-2 col-md-4">
+          <h4 class="footer-h4-title" data-i18n="footer.nav_title">NAVIGATION</h4>
+          <ul class="footer-nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="about.html" data-i18n="nav.about">Qui sommes-nous</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Nos services</a></li>
+            <li><a href="portfolio.html" data-i18n="nav.portfolio">Nos réalisations</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Regional Offices -->
+        <div class="col-lg-3 col-md-4">
+          <h4 class="footer-h4-title" data-i18n="footer.offices_title">NOS BUREAUX</h4>
+          <ul class="footer-info-list">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span><strong>KINSHASA:</strong> Q. Ma Campagne, Av. Kapaya N°03, Ngaliema</span>
+            </li>
+            <li class="mt-3">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span><strong>GOMA:</strong> Q. Kyeshero, Av. Kituku N°13</span>
+            </li>
+            <li class="mt-3">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span><strong>BENI:</strong> RN4, Face ENERA, N°6, Av. Opienge</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Direct -->
+        <div class="col-lg-3 col-md-4">
+          <h4 class="footer-h4-title" data-i18n="footer.direct_label">CONTACT DIRECT</h4>
+          <ul class="footer-info-list">
+            <li>
+              <i class="bi bi-telephone-plus-fill"></i>
+              <span>+243 830517419</span>
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-whatsapp"></i>
+              <span>+243 975418640</span>
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-envelope-check-fill"></i>
+              <span>direction@ephodconsulting.org</span>
+            </li>
+          </ul>
+          <div class="footer-social-icons mt-4">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom-elite">
+        <p>&copy; 2026 EPHOD CONSULTING. Tous droits réservés.</p>
+        <div class="f-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+  // ── HERO TYPEWRITER ENGINE ─────────────────────────────────
+  function getHeroSlides() {
+    const isEn = window.currentLang === 'en';
+    return [
+      {
+        brandPre: "",
+        brandTag: "",
+        line1: isEn ? "Expertise in Humanitarian Planning" : "Expertise en Planification Humanitaire",
+        line2: isEn ? "and Operationalization of Development." : "et Opérationnalisation du Développement.",
+        cta:   'slide1-cta'
+      },
+      {
+        brandPre: "",
+        brandTag: "",
+        line1: isEn ? "MEASURING impact to" : "MESURER l'impact",
+        line2: isEn ? "IMPROVE practices." : "pour améliorer les pratiques.",
+        cta:   'slide2-cta'
+      },
+      {
+        brandPre: "",
+        brandTag: "",
+        line1: isEn ? "SUPPORTING organizations" : "ACCOMPAGNER les organisations",
+        line2: isEn ? "towards strategic excellence." : "vers l'excellence stratégique.",
+        cta:   'slide3-cta'
+      }
+    ];
+  }
+
+  let heroTwInterval = null;
+
+  function typeHeroLine(el, text, speed, cb) {
+    if (!el) return cb && cb();
+    el.textContent = '';
+    el.classList.add('typing');
+    let i = 0;
+    clearInterval(heroTwInterval);
+    heroTwInterval = setInterval(() => {
+      if (i < text.length) {
+        el.textContent += text[i++];
+      } else {
+        clearInterval(heroTwInterval);
+        el.classList.remove('typing');
+        if (cb) cb();
+      }
+    }, speed);
+  }
+
+  function runSlideAnimation(slideIndex) {
+    const slides = getHeroSlides();
+    const s = slides[slideIndex];
+    if (!s) return;
+
+    const n = slideIndex + 1;
+    const brPre = document.getElementById('slide' + n + '-brand-prefix');
+    const brTag = document.getElementById('slide' + n + '-brand-tagline');
+    const l1 = document.getElementById('slide' + n + '-line1');
+    const l2 = document.getElementById('slide' + n + '-line2');
+    const cta = document.getElementById(s.cta);
+
+    // Soft Reset (don't force opacity 0 if not needed)
+    if (brPre) { brPre.textContent = ''; }
+    if (brTag) { brTag.textContent = ''; }
+    if (l1)  { l1.textContent = ''; }
+    if (l2)  { l2.textContent = ''; }
+    // cta stay visible as per safe-patch
+
+    // Sequence: Prefix → Tagline → Line 1 → Line 2 → CTA
+    typeHeroLine(brPre, s.brandPre, 30, () => {
+      typeHeroLine(brTag, s.brandTag, 25, () => {
+        setTimeout(() => {
+          typeHeroLine(l1, s.line1, 45, () => {
+            setTimeout(() => {
+              typeHeroLine(l2, s.line2, 40, () => {
+                setTimeout(() => {
+                  if (cta) cta.style.opacity = '1';
+                }, 300);
+              });
+            }, 100);
+          });
+        }, 300);
+      });
+    });
+  }
+
+  // ── INIT ──────────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // Machine à écrire (hero image fixe)
+    runSlideAnimation(0);
+
+    // Mini slider rotatif des domaines
+    if (document.querySelector('.hero-mini-swiper')) {
+      new Swiper('.hero-mini-swiper', {
+        loop: true,
+        speed: 500, // Défilement plus rapide
+        autoplay: { delay: 1800, disableOnInteraction: false }, // Les slides passent plus vite
+        slidesPerView: 'auto', // Fondamental pour que le texte ne dépasse pas
+        spaceBetween: 14,
+        centeredSlides: false
+      });
+    }
+
+    // News Slider
+    if (document.querySelector('.news-slider-swiper')) {
+      new Swiper('.news-slider-swiper', {
+        loop: true,
+        speed: 800,
+        autoplay: { delay: 5000, disableOnInteraction: false },
+        pagination: { el: '.news-slider-pagination', clickable: true },
+        effect: 'fade',
+        fadeEffect: { crossFade: true }
+      });
+    }
+  });
+
+  window.resetAllTypewriters = function() { runSlideAnimation(0); };
+  </script>
+</body>
+
+
+</html>
