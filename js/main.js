@@ -125,7 +125,7 @@ function initPreloader() {
     setTimeout(() => {
       preloader.classList.add('hidden');
       document.body.classList.remove('preloader-active');
-    }, 700);
+    }, 100);
   });
   setTimeout(() => {
     if (preloader && !preloader.classList.contains('hidden')) {
@@ -404,8 +404,8 @@ function initScrollTypewriter() {
         function playChain(idx) {
           if (idx >= elements.length) return;
           const el = elements[idx];
-          typeWriter(el, parseInt(el.dataset.speed, 10) || 60, () => {
-            setTimeout(() => playChain(idx + 1), 350); 
+          typeWriter(el, parseInt(el.dataset.speed, 10) || 35, () => {
+            setTimeout(() => playChain(idx + 1), 150); 
           });
         }
         
