@@ -554,6 +554,10 @@ const translations = {
         "about.tm3_name": "Spécialiste Genre",
         "about.tm3_role": "Analyste Protection",
 
+        "about.consultants_label": "EXPERTISE ANALYTIQUE",
+        "about.consultants_title": "Corps de <span style='background: linear-gradient(90deg, #8C1338, #FF2E2E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; margin-left: 8px;'>Consultants</span>",
+        "about.consultants_desc": "Des spécialistes seniors mobilisés pour garantir des analyses techniques de pointe.",
+
         "privacy.title": "Mentions Légales",
         "privacy.subtitle": "Transparence, Protection des données & Éthique",
         "privacy.sec1_title": "1. Identité de l'Entreprise",
@@ -1159,6 +1163,10 @@ const translations = {
         "about.tm2_role": "Governance Expert",
         "about.tm3_name": "Gender Specialist",
         "about.tm3_role": "Protection Analyst",
+
+        "about.consultants_label": "ANALYTICAL EXPERTISE",
+        "about.consultants_title": "Consultants <span style='background: linear-gradient(90deg, #8C1338, #FF2E2E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; margin-left: 8px;'>Pool</span>",
+        "about.consultants_desc": "Senior specialists mobilized to ensure cutting-edge technical analyses.",
 
         "privacy.title": "Legal Mentions",
         "privacy.subtitle": "Transparency, Data Protection & Ethics",
