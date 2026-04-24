@@ -174,7 +174,9 @@
                 <li data-i18n="careers.job1_req4">Excellente capacité rédactionnelle (rapports & proposals)</li>
               </ul>
             </div>
-            <a href="#applicationForm" class="job-apply-btn"><i class="bi bi-send"></i> <span data-i18n="careers.job_apply_btn">Postuler maintenant</span></a>
+            <button type="button" class="job-apply-btn" data-bs-toggle="modal" data-bs-target="#applyModal">
+              <i class="bi bi-send"></i> <span data-i18n="careers.job_apply_btn">Postuler maintenant</span>
+            </button>
           </div>
         </div>
 
@@ -201,44 +203,50 @@
                 <li data-i18n="careers.job2_req4">Connaissance des protocoles LQAS/MSNA appréciée</li>
               </ul>
             </div>
-            <a href="#applicationForm" class="job-apply-btn"><i class="bi bi-send"></i> <span data-i18n="careers.job_apply_btn">Postuler maintenant</span></a>
+            <button type="button" class="job-apply-btn" data-bs-toggle="modal" data-bs-target="#applyModal">
+              <i class="bi bi-send"></i> <span data-i18n="careers.job_apply_btn">Postuler maintenant</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== APPLICATION FORM (Elite) ========== -->
-  <section class="py-5" id="applicationForm">
-    <div class="container py-lg-4">
-      <div class="text-center mb-5">
-        <span class="careers-section-eyebrow" data-i18n="careers.form_label"><i class="bi bi-envelope-paper-fill"></i> CANDIDATURE</span>
-        <h2 class="careers-section-heading" data-i18n="careers.form_title">Rejoignez <span>l'Excellence</span></h2>
-        <p class="careers-form-subtitle" data-i18n="careers.form_sub">Soumettez votre candidature complète. Notre équipe RH analysera votre profil sous 72h ouvrables.</p>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
+  <!-- ========== RECRUITMENT MODAL (Elite) ========== -->
+  <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 overflow-hidden" style="border-radius:24px;">
+        <div class="modal-header bg-dark text-white py-4 border-0">
+          <h5 class="modal-title fw-900" id="applyModalLabel">
+            <span class="color-rouge"><i class="bi bi-briefcase-fill me-2"></i></span> 
+            <span data-i18n="careers.form_title">Rejoignez l'Excellence</span>
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 p-lg-5">
+          <p class="careers-form-subtitle mb-4 text-center" data-i18n="careers.form_sub">Soumettez votre candidature complète. Notre équipe RH analysera votre profil sous 72h ouvrables.</p>
+          
           <form class="application-form-elite" action="mailto:direction@ephodconsulting.org" method="post" enctype="multipart/form-data">
             <div class="row g-3">
               <!-- Full Name -->
               <div class="col-md-6">
                 <label class="form-label-elite" for="appFullName" data-i18n="careers.lbl_name">Nom complet *</label>
-                <input type="text" class="form-control-elite" id="appFullName" data-i18n-placeholder="careers.ph_name" placeholder="Ex: Jean-Pierre KASONGO" required>
+                <input type="text" class="form-control-elite" id="appFullName" name="name" data-i18n-placeholder="careers.ph_name" placeholder="Ex: Jean-Pierre KASONGO" required>
               </div>
               <!-- Email -->
               <div class="col-md-6">
                 <label class="form-label-elite" for="appEmail" data-i18n="careers.lbl_email">Adresse email *</label>
-                <input type="email" class="form-control-elite" id="appEmail" placeholder="votre.email@exemple.com" required>
+                <input type="email" class="form-control-elite" id="appEmail" name="email" placeholder="votre.email@exemple.com" required>
               </div>
               <!-- Phone -->
               <div class="col-md-6">
                 <label class="form-label-elite" for="appPhone" data-i18n="careers.lbl_phone">Téléphone *</label>
-                <input type="tel" class="form-control-elite" id="appPhone" placeholder="+243 ..." required>
+                <input type="tel" class="form-control-elite" id="appPhone" name="phone" placeholder="+243 ..." required>
               </div>
               <!-- Position -->
               <div class="col-md-6">
                 <label class="form-label-elite" for="appPosition" data-i18n="careers.lbl_pos">Poste visé *</label>
-                <select class="form-control-elite" id="appPosition" required>
+                <select class="form-control-elite" id="appPosition" name="position" required>
                   <option value="" disabled selected data-i18n="careers.opt_def">— Sélectionnez un poste —</option>
                   <option value="consultant" data-i18n="careers.opt_1">Consultant & Expert Indépendant</option>
                   <option value="technicien" data-i18n="careers.opt_2">Technicien de Recherche</option>
@@ -249,7 +257,7 @@
               <div class="col-12">
                 <label class="form-label-elite" for="appCV" data-i18n="careers.lbl_cv">Curriculum Vitae (PDF uniquement) *</label>
                 <div class="file-upload-elite">
-                  <input type="file" id="appCV" accept=".pdf" required>
+                  <input type="file" id="appCV" name="cv" accept=".pdf" required>
                   <div class="file-upload-placeholder">
                     <i class="bi bi-cloud-arrow-up"></i>
                     <span data-i18n="careers.cv_drop">Glissez votre CV ici ou <strong>cliquez pour parcourir</strong></span>
@@ -260,17 +268,16 @@
               <!-- Cover Letter -->
               <div class="col-12">
                 <label class="form-label-elite" for="appLetter" data-i18n="careers.lbl_letter">Lettre de motivation *</label>
-                <textarea class="form-control-elite" id="appLetter" rows="6" data-i18n-placeholder="careers.ph_letter" placeholder="Décrivez votre motivation, vos compétences clés et votre disponibilité..." required></textarea>
+                <textarea class="form-control-elite" id="appLetter" name="letter" rows="6" data-i18n-placeholder="careers.ph_letter" placeholder="Décrivez votre motivation, vos compétences clés et votre disponibilité..." required></textarea>
               </div>
-              <!-- LinkedIn -->
+              <!-- LinkedIn & Avail -->
               <div class="col-md-6">
                 <label class="form-label-elite" for="appLinkedIn" data-i18n="careers.lbl_lk">Profil LinkedIn (optionnel)</label>
-                <input type="url" class="form-control-elite" id="appLinkedIn" placeholder="https://linkedin.com/in/...">
+                <input type="url" class="form-control-elite" id="appLinkedIn" name="linkedin" placeholder="https://linkedin.com/in/...">
               </div>
-              <!-- Availability -->
               <div class="col-md-6">
                 <label class="form-label-elite" for="appAvail" data-i18n="careers.lbl_avail">Disponibilité</label>
-                <select class="form-control-elite" id="appAvail">
+                <select class="form-control-elite" id="appAvail" name="availability">
                   <option value="immediate" data-i18n="careers.avail_1">Immédiate</option>
                   <option value="1month" data-i18n="careers.avail_2">Sous 1 mois</option>
                   <option value="3months" data-i18n="careers.avail_3">Sous 3 mois</option>
@@ -289,7 +296,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
 
   <!-- ========== FOOTER ========== -->

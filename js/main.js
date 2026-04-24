@@ -893,6 +893,43 @@ Methodological Rigor for Sustainable Impact
 }
 
 /* ── INIT ──────────────────────────────────────────────── */
+
+/* ── RECRUITMENT FORM HANDLING ────────────────────────── */
+function initRecruitmentForm() {
+    const form = document.querySelector('.application-form-elite');
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+        // Since we don't have a backend, we normally rely on form action
+        // But we want to give UX feedback
+        const btn = form.querySelector('.btn-submit-elite');
+        const originalHtml = btn.innerHTML;
+        
+        // Show loading/success state
+        btn.innerHTML = '<i class="bi bi-check-lg"></i> <span>Envoi en cours...</span>';
+        btn.disabled = true;
+
+        setTimeout(() => {
+            btn.innerHTML = '<i class="bi bi-check-lg"></i> <span>Merci !</span>';
+            btn.style.background = '#28a745';
+            
+            setTimeout(() => {
+                const modalEl = document.getElementById('applyModal');
+                const modal = bootstrap.Modal.getInstance(modalEl);
+                if (modal) modal.hide();
+                
+                // Reset form after closing
+                setTimeout(() => {
+                    form.reset();
+                    btn.innerHTML = originalHtml;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 500);
+            }, 1500);
+        }, 1000);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   // Use a try-catch for the main init to ensure one failure doesn't kill the whole app
   try {
@@ -919,6 +956,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactForm();
     initPortfolioFilter();
     initEphodModals();
+    initRecruitmentForm();
     handleInitialAnchor();
     
     const yr = document.getElementById('year');
