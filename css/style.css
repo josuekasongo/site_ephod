@@ -6662,7 +6662,7 @@ body, html {
 .team-avatar-placeholder {
   width: 90px;
   height: 90px;
-  background: var(--dark);
+  background: #111111;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -6687,7 +6687,7 @@ body, html {
 
 .team-name {
   font-weight: 700;
-  color: var(--dark);
+  color: #111111;
   margin-bottom: 5px;
   font-size: 1.15rem;
 }
