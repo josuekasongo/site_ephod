@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ephod-cache-v6.0';
+const CACHE_NAME = 'ephod-cache-v7.0';
 const urlsToCache = [
   './',
   './index.html',
@@ -16,7 +16,7 @@ const urlsToCache = [
 ];
 
 self.addEventListener('install', event => {
-  self.skipWaiting(); // Force the new service worker to activate immediately
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
@@ -26,10 +26,35 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
+  const request = event.request;
+  
+  // Stratégie Network First pour les requêtes HTML (navigation)
+  if (request.mode === 'navigate' || request.headers.get('accept').includes('text/html')) {
+    event.respondWith(
+      fetch(request)
+        .then(response => {
+          // Met en cache la nouvelle version
+          const responseClone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, responseClone));
+          return response;
+        })
+        .catch(() => {
+          return caches.match(request);
+        })
+    );
+    return;
+  }
+
+  // Cache First pour le reste (images, css, js)
   event.respondWith(
-    caches.match(event.request)
+    caches.match(request)
       .then(response => {
-        return response || fetch(event.request);
+        return response || fetch(request).then(fetchRes => {
+            return caches.open(CACHE_NAME).then(cache => {
+                cache.put(request, fetchRes.clone());
+                return fetchRes;
+            });
+        });
       })
   );
 });
