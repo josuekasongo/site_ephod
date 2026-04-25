@@ -583,7 +583,7 @@ const translations = {
         "privacy.sec5_title": "5. Engagement Éthique (PSEA & Accountability)",
         "privacy.sec5_desc": "EPHOD CONSULTING adhère rigoureusement aux standards du Core Humanitarian Standard (CHS). Nous appliquons une politique de tolérance zéro envers l'exploitation et les abus sexuels (PSEA).",
         "footer.privacy": "Privacy Policy",
-        "footer.terms": "Terms"
+        "footer.terms": "Mentions Légales"
     },
     en: {
         "nav.home": "Home",
@@ -1211,7 +1211,7 @@ const translations = {
         "privacy.sec5_title": "5. Ethical Commitment (PSEA & Accountability)",
         "privacy.sec5_desc": "EPHOD CONSULTING strictly adheres to the standards of the Core Humanitarian Standard (CHS). We apply a zero-tolerance policy towards sexual exploitation and abuse (PSEA).",
         "footer.privacy": "Privacy Policy",
-        "footer.terms": "Terms"
+        "footer.terms": "Terms of Service"
     }
 };
 
