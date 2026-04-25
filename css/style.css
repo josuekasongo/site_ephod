@@ -6790,3 +6790,50 @@ body, html {
   color: white;
   transform: translateY(-3px);
 }
+
+/* ============================================================
+   ULTIMATE RESPONSIVE POLISH (v6.0)
+   ============================================================ */
+@media (max-width: 576px) {
+    /* Banner titles fix */
+    .elite-banner-title {
+        font-size: 1.65rem !important;
+        letter-spacing: 0px !important;
+        padding: 0 15px;
+    }
+    
+    .hero-brand-giant--stacked {
+        font-size: 2.5rem !important;
+        letter-spacing: -1px !important;
+    }
+
+    .brand-sub-consulting {
+        letter-spacing: 5px !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Background decorative text overflow prevention */
+    .quality-card-bg-icon {
+        font-size: 5rem !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        opacity: 0.01 !important;
+    }
+
+    /* Section labels */
+    .section-label-rmda {
+        font-size: 0.75rem !important;
+        letter-spacing: 0.1em !important;
+    }
+
+    /* Padding adjustments */
+    .noir-rouge-elite-banner {
+        padding: 140px 0 60px !important;
+    }
+}
+
+/* Fix for horizontal scroll on some mobile browsers */
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+}
