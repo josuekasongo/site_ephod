@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ephod-cache-v5.0';
+const CACHE_NAME = 'ephod-cache-v6.0';
 const urlsToCache = [
   './',
   './index.html',
@@ -9,6 +9,7 @@ const urlsToCache = [
   './careers.html',
   './contact.html',
   './news.html',
+  './privacy.html',
   './css/style.css',
   './js/main.js',
   './js/lang.js'

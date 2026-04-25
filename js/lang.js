@@ -119,8 +119,6 @@ const translations = {
         "home.news3_title": "PDM Christian Aid",
         "home.news3_desc": "Post Distribution Monitoring — évaluation des résultats d'interventions cash dans les zones à accès complexe du Sud-Kivu.",
 
-        "about.banner_title": "Expertise Locale, Standards Internationaux",
-        "about.banner_sub": "Cabinet immatriculé (RCCM CD/KNG/RCCM/25-B-03958) dédié à la performance et la redevabilité en contextes fragiles.",
         "about.banner_title": "<span class='color-noir'>L'EXCELLENCE AU SERVICE</span> <span class='color-rouge'>DE L'IMPACT</span>",
         "about.banner_desc": "EPHOD Consulting déploie une expertise de pointe pour transformer les défis complexes en impacts durables. Une excellence opérationnelle aux standards mondiaux, même en contextes fragiles.",
         "about.values_title": "<span class='color-noir'>Nos Valeurs</span> <span class='color-rouge'>Fondamentales</span>",
@@ -177,7 +175,7 @@ const translations = {
         "services.banner_title": "Offre Stratégique & Technique",
         "services.banner_giant_elite": "<span class='color-noir'>DES SOLUTIONS ANALYTIQUES</span> <span class='color-rouge'>AU SERVICE DE L'IMPACT</span>",
         "services.banner_sub": "Vente de consultances, formations humanitaires et appui logistique en zones difficiles.",
-        "services.expertise_label": "Notre Compétences",
+        "services.expertise_label": "Nos Compétences",
         "services.expertise_title_part1": "<span class='color-noir'>Une expertise</span>",
         "services.expertise_title_part2": "<span class='color-rouge'>pluridisciplinaire</span>",
         "services.banner_giant1": "EPHOD",
@@ -188,7 +186,7 @@ const translations = {
 
         "srv.s1_title": "ÉTUDES & RECHERCHES",
         "srv.s1_desc": "Baseline, Études de Marché, Évaluations de besoins et Diagnostics Institutionnels.",
-        "srv.s2_title": "EVALUATIONS INDÉPENDANTES",
+        "srv.s2_title": "ÉVALUATIONS INDÉPENDANTES",
         "srv.s2_desc": "Évaluations à mi-parcours et finales selon les critères internationaux OCDE-CAD.",
         "srv.s3_title": "SERVICES MONÉTAIRES SÉCURISÉS",
         "srv.s3_desc": "Appui aux interventions Cash (Mobile Money, Transferts) en zones à accès difficile.",
@@ -202,7 +200,6 @@ const translations = {
         "srv.s7_desc": "Appui aux interventions en cash (Mobile Money, Remittances) et études de marché en zones difficiles.",
         "srv.s8_title": "LOGISTIQUE DE TERRAIN",
         "srv.s8_desc": "Support au dernier kilomètre, cartographie SIG et collecte digitalisée en contextes fragiles et d'urgence.",
-        "srv.s9_title": "GENRE, PROTECTION & AAP",
         "srv.s9_title": "GENRE, PROTECTION & AAP",
         "srv.s9_desc": "Analyses transversales Genre, Protection, Inclusion et Sensibilité aux conflits intégrées dans chaque mission.",
 
@@ -281,7 +278,7 @@ const translations = {
         "port.p14_title": "Évaluation UKWELI BILA CHUKI", "port.p14_client": "La Benevolencija", "port.p14_zone": "Nord-Kivu", "port.p14_date": "Juin 2024", "port.p14_context": "Rapport d'évaluation finale du projet de cohésion sociale et lutte contre la désinformation.", "port.p14_solution": "Analyse de sensibilité aux conflits et d'impact social.", "port.p14_impact": "Cohésion sociale renforcée. Contact: Nelson BENEVOLENCIA",
         "port.p15_title": "Évaluation Besoins ERM", "port.p15_client": "SCI, MEDAIR, CARE, IMC", "port.p15_zone": "Ituri, Nord & Sud Kivu", "port.p15_date": "Octobre 2023", "port.p15_context": "Consultant principal pour mener l'ERM du consortium humanitaire majeur.", "port.p15_solution": "Coordination de collecte de données multisectorielle rapide.", "port.p15_impact": "Réponse rapide du consortium validée. Contact: Alex FIKIRI (Alex.Fikiri@savethechildren.org)",
         "port.p16_title": "Éval Finale Éducation Urgence", "port.p16_client": "UNICEF / SCI", "port.p16_zone": "8 Provinces de la RDC", "port.p16_date": "Février – Mars 2023", "port.p16_context": "Évaluation finale des projets d'éducation en situations d'urgence (8 provinces).", "port.p16_solution": "Audit technique et qualitatif de l'accès à l'éducation.", "port.p16_impact": "Recommandations pour l'éducation en zone de conflit. Contact: Alex FIKIRI",
-        "port.p17_title": "Éval Éducation COVID-19", "port.p17_client": "UNICEF / SCI", "port.p17_zone": "Toute la RDC (16 prov.)", "port.p17_date": "Mars 2022", "port.p17_context": "Évaluation finale du projet d'éducation à distance pendant la pandémie.", "port.p17_solution": "Analyse de la l'efficacité des outils de continuité pédagogique.", "port.p17_impact": "Leçons apprises pour la résilience éducative. Contact: Alex FIKIRI",
+        "port.p17_title": "Éval Éducation COVID-19", "port.p17_client": "UNICEF / SCI", "port.p17_zone": "Toute la RDC (16 prov.)", "port.p17_date": "Mars 2022", "port.p17_context": "Évaluation finale du projet d'éducation à distance pendant la pandémie.", "port.p17_solution": "Analyse de l'efficacité des outils de continuité pédagogique.", "port.p17_impact": "Leçons apprises pour la résilience éducative. Contact: Alex FIKIRI",
         "port.p18_title": "Étude Marché Emploi IDPs", "port.p18_client": "Jesuite Refugee Service", "port.p18_zone": "Masisi (RDC)", "port.p18_date": "Mai 2019", "port.p18_context": "Recherche sur le marché de l'emploi dans les camps de déplacés internes.", "port.p18_solution": "Diagnostic des compétences et opportunités locales.", "port.p18_impact": "Stratégie d'employabilité JRS. Contact: Vincent KISHALI (vincent.kishali@jrs.net)",
         "port.p19_title": "Éval Formation Professionnelle", "port.p19_client": "Fondation Follereau", "port.p19_zone": "Ségou (Mali)", "port.p19_date": "Septembre 2019", "port.p19_context": "Évaluation finale du projet de développement de l'employabilité des jeunes vulnérables.", "port.p19_solution": "Audit de performance et analyse de l'insertion pro.", "port.p19_impact": "Validation du modèle de formation au Mali. Contact: Clémentine GLOIRE (clementine.gloire@ffl.lu)",
         "port.p20_title": "Système S&E Programme FSP", "port.p20_client": "Mercy Corps", "port.p20_zone": "Bukavu (RDC)", "port.p20_date": "Août 2017", "port.p20_context": "Développement du système de suivi-évaluation et révision des indicateurs pour le projet FSP.", "port.p20_solution": "Conception d'outils digitaux et tableaux de bord MEAL.", "port.p20_impact": "Pilotage basé sur les résultats pour Mercy Corps. Contact: Jean DANIEL (jdaniel@cd.mercycorps.org)",
@@ -292,7 +289,7 @@ const translations = {
         "ongoing.proj1_title": "Mission ProGERIM II (GIZ)",
         "ongoing.proj1_desc": "Amélioration de la transparence des revenus miniers pour les ETD du Lualaba et Haut-Katanga. Collecte LQAS en cours.",
         "ongoing.proj2_title": "Evaluation JRS (Kayna/Lubero)",
-        "ongoing.proj2_desc": "Analyse Genre, Inclusion et Sensibilité aux conflits. Mission de terrain Luéro engagée à 85%.",
+        "ongoing.proj2_desc": "Analyse Genre, Inclusion et Sensibilité aux conflits. Mission de terrain Lubero engagée à 85%.",
         "ongoing.proj3_title": "Audit SONAHU (Nord-Kivu)",
         "ongoing.proj3_desc": "Audit de gouvernance et conformité OHADA pour le partenaire SONAHU.",
         "ongoing.proj4_title": "Umoja in Action (MEAL)",
@@ -358,9 +355,6 @@ const translations = {
         "about.pillar3_title": "Transformer",
         "about.pillar3_desc": "Vos ambitions stratégiques en impacts concrets et pérennes.",
         
-        "about.role_dg_desc": "Visionnaire et garante de l'excellence stratégique d'EPHOD Consulting.",
-        "about.role_ops_desc": "Expert en coordination et déploiements terrain en environnements complexes.",
-
         "careers.p_dev_title": "Développement Continu",
         "careers.policy_dev": "Formations régulières, mentorat par des experts seniors et opportunités de croissance au sein de missions à forte valeur ajoutée dans toute la RDC.",
         
