@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=7.3">
+  <link rel="stylesheet" href="css/style.css?v=7.4">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   
   <style>
@@ -90,12 +90,17 @@
           <span>C</span><span>O</span><span>N</span><span>S</span><span>U</span><span>L</span><span>T</span><span>I</span><span>N</span><span>G</span>
         </div>
       </a>
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="d-flex align-items-center gap-2 order-lg-last ms-auto">
+        <button class="lang-btn" onclick="toggleLanguage()" id="langBtn"><i class="bi bi-globe"></i><span id="lang-toggle-text">FR</span></button>
+        <button class="lang-btn theme-toggle-btn" onclick="cycleTheme()" id="themeBtn" title="Changer le thème" style="padding: 10px 15px;"><i class="bi bi-moon-stars" id="themeIcon"></i></button>
+        
+        <button class="navbar-toggler border-0 shadow-none ms-1 px-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center me-lg-3">
           <li class="nav-item has-dropdown">
             <a class="nav-link" href="index.html"><span data-i18n="nav.home">Accueil</span> <i class="bi bi-chevron-down" style="font-size:0.8rem;"></i></a>
             <div class="nav-dropdown">
@@ -157,10 +162,6 @@
             </div>
           </li>
         </ul>
-        <div class="d-flex align-items-center gap-2">
-          <button class="lang-btn" onclick="toggleLanguage()" id="langBtn"><i class="bi bi-globe"></i><span id="lang-toggle-text">FR</span></button>
-          <button class="lang-btn theme-toggle-btn" onclick="cycleTheme()" id="themeBtn" title="Changer le thème" style="padding: 10px 15px;"><i class="bi bi-moon-stars" id="themeIcon"></i></button>
-        </div>
       </div>
     </div>
   </nav>
@@ -352,11 +353,11 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/lang.js?v=7.3"></script>
-  <script src="js/main.js?v=7.3"></script>
+  <script src="js/lang.js?v=7.4"></script>
+  <script src="js/main.js?v=7.4"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js?v=7.3');
+      navigator.serviceWorker.register('./sw.js?v=7.4');
     }
   </script>
 </body>
