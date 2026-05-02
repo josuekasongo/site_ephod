@@ -35,6 +35,44 @@ function initPortfolioFiltering() {
 }
 // Multiple init blocks merged into the final one at the bottom of the file
 
+/* ── THEME LOGIC ────────────────────────────────────────── */
+const themeModes = ['light', 'dark', 'black'];
+let currentTheme = localStorage.getItem('ephod_theme') || 'light';
+
+function applyTheme(theme) {
+  const body = document.body || document.documentElement;
+  body.classList.remove('theme-light', 'theme-dark', 'theme-black');
+  body.classList.add('theme-' + theme);
+  
+  const themeIcon = document.getElementById('themeIcon');
+  if (themeIcon) {
+    if (theme === 'light') themeIcon.className = 'bi bi-brightness-high';
+    else if (theme === 'dark') themeIcon.className = 'bi bi-moon-stars';
+    else themeIcon.className = 'bi bi-moon-fill';
+  }
+
+  // Automatically swap logo if we can find it
+  const logoImg = document.getElementById('navbarLogoImg');
+  if (logoImg) {
+    if (theme === 'light') {
+      logoImg.src = "img/logo.png";
+    } else {
+      logoImg.src = "img/logo-blanc.png";
+    }
+  }
+}
+
+function cycleTheme() {
+  let idx = themeModes.indexOf(currentTheme);
+  idx = (idx + 1) % themeModes.length;
+  currentTheme = themeModes[idx];
+  localStorage.setItem('ephod_theme', currentTheme);
+  applyTheme(currentTheme);
+}
+
+// Apply on initial load
+applyTheme(currentTheme);
+
 // --- HERO SWIPER INITIALIZATION ---
 function initHeroSwiper() {
   const swiperEl = document.querySelector('.hero-swiper');
